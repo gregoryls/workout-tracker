@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
+    <script src="js.js" defer></script>
 </head>
 <body>
     <label for="movement">
-        Movement
+        Movement:
         <select name="movement" id="movement" autocomplete="off">
             <option value="">---</option>
             <option value="squat">squat</option>
@@ -22,6 +22,11 @@
             <option value="tricep">tricep</option>
             <option value="other">other</option>
         </select>
+        <label for="squatOptions">
+            <select name="squatOptions" id="squatOptions">
+                <option value="none">none</option>
+            </select>
+        </label>
     </label>
     
 </body>
