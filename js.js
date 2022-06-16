@@ -9,3 +9,7 @@ function testFunction(){
 }
 const movement = document.getElementById('movement');
 movement.addEventListener('change',testFunction);
+
+//big list of exercise full names, e.g. flat barbell bench, incline dumbell bench etc.
+//maybe select options to narrow down a populated list of every exercise
+//which is also filterable by a search field.
