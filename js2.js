@@ -1,10 +1,18 @@
 workoutData = {}
 workoutData["date"] = {
+    date: new Date(),
+    "workout number":1,
     exercises:{
         excercise1:{
             name:"squat",
-            225:5,
-            185:8
+            set1:{
+                weight:225,
+                reps:5
+            },
+            set2:{
+                weight:185,
+                reps:8
+            }
         },
         excercise2:{
             name:"bench",
