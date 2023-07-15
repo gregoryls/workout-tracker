@@ -1,7 +1,7 @@
 workoutData = {}
-workoutData["date"] = {
-    date: new Date(),
-    "workout number":1,
+workoutData["day"] = {
+    date: new Date(2022,06,20,2,45,0),
+    workoutNumber:1,
     exercises:{
         excercise1:{
             name:"squat",
@@ -21,4 +21,4 @@ workoutData["date"] = {
         }
     }
 }
-console.log(Object.keys(workoutData.date.exercises.excercise1)[0]);
+console.log(Object.keys(workoutData.day.exercises.excercise1)[0]);
