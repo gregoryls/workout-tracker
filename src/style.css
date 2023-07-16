@@ -1,3 +1,8 @@
+body {
+  background-color: #1d201f;
+  color: white;
+}
+
 #squatOptions {
   visibility: hidden;
 }
