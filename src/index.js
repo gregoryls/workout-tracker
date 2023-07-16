@@ -1,3 +1,5 @@
+import "./style.css";
+
 const a2022530 = {
   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
   ohp: { weight: "55", reps: ["16", "16", "16", "16", "16"] },
