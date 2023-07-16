@@ -14,9 +14,9 @@ movement.addEventListener("change", testFunction);
 // maybe select options to narrow down a populated list of every exercise
 // which is also filterable by a search field.
 
-workoutData = {};
-workoutData["day"] = {
-  date: new Date(2022, 06, 20, 2, 45, 0),
+const workoutData = {};
+workoutData.day = {
+  date: new Date(2022, 0o6, 20, 2, 45, 0),
   workoutNumber: 1,
   exercises: {
     excercise1: {
