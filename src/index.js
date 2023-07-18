@@ -5,18 +5,51 @@ import "./style.css";
 // import this big list from it's own separate file to reduce visual bloat
 // maybe select options to narrow down a populated list of every exercise
 // which is also filterable by a search field.
+// read more on destructuring
 
-const a2022530 = {
-  squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
-  ohp: { weight: "55", reps: ["16", "16", "16", "16", "16"] },
-};
-function testFunction() {
-  if (movement.value == "squat") {
-    document.getElementById("squatOptions").style.visibility = "visible";
+// const a2022530 = {
+//   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
+//   ohp: { weight: "55", reps: ["16", "16", "16", "16", "16"] },
+// };
+
+// const movement = document.getElementById("movement");
+// movement.addEventListener("change", testFunction);
+
+// function testFunction() {
+//   if (movement.value === "squat") {
+//     document.getElementById("squatOptions").style.visibility = "visible";
+//   }
+// }
+
+const exerciseInput = document.getElementById("exerciseInput");
+const exerciseList = document.getElementById("exerciseList");
+const submitExercise = document.getElementById("submitExercise");
+
+submitExercise.addEventListener("click", () => {
+  const { value } = exerciseInput;
+  const exerciseOptions = exerciseList.options;
+  const option = document.createElement("option");
+  let isContained = false;
+
+  for (let i = 0; i < exerciseOptions.length; i += 1) {
+    if (exerciseOptions[i].value.toLowerCase() === value.toLowerCase()) {
+      isContained = true;
+    }
   }
-}
-const movement = document.getElementById("movement");
-movement.addEventListener("change", testFunction);
+  if (!isContained) {
+    option.value = value;
+    exerciseList.append(option);
+  }
+});
+
+// input.addEventListener("input", () => {
+//   const { value } = this;
+
+//   const newExercise = document.createElement("option");
+//   newExercise.value = value;
+//   exerciseList.append(newExercise);
+//   this.value = value;
+// });
 
 const workoutData = {};
 workoutData.day = {
