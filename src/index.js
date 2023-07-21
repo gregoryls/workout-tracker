@@ -8,6 +8,7 @@ import * as exercises from "./exercises";
 // which is also filterable by a search field.
 // read more on destructuring
 // instead of directly adding new exercise, have some kind of dialogue
+// look into webpack library
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },

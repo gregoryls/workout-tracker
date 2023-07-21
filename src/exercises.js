@@ -10,6 +10,11 @@ export function exerciseList() {
         },
       },
     },
+    benchPress: {
+      variation: {
+        none: true,
+      },
+    },
   };
   return list;
 }
