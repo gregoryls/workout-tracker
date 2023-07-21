@@ -34,6 +34,9 @@ console.log(list);
 exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
   console.log(value);
+  if (list[value]) {
+    console.log("sucess");
+  }
 });
 
 submitExercise.addEventListener("click", () => {
