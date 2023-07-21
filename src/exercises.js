@@ -1,4 +1,18 @@
-const exerciseList = {};
+export function exerciseList() {
+  const list = {
+    squat: {
+      variation: {
+        none: true,
+        pause: true,
+        tempo: {
+          concentric: 1,
+          eccentric: 2,
+        },
+      },
+    },
+  };
+  return list;
+}
 
 const sampleWorkout = {
   date: new Date(),

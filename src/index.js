@@ -1,5 +1,5 @@
 import "./style.css";
-import sampleWorkout from "./exercises";
+import * as exercises from "./exercises";
 
 // TODO
 // big list of exercise full names, e.g. flat barbell bench, incline dumbell bench etc.
@@ -27,6 +27,14 @@ const exerciseInput = document.getElementById("exerciseInput");
 const exerciseList = document.getElementById("exerciseList");
 const submitExercise = document.getElementById("submitExercise");
 
+const list = exercises.exerciseList();
+console.log(list);
+
+exerciseInput.addEventListener("input", () => {
+  const { value } = exerciseInput;
+  console.log(value);
+});
+
 submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
   const exerciseOptions = exerciseList.options;
@@ -44,7 +52,7 @@ submitExercise.addEventListener("click", () => {
   }
 });
 
-console.log(sampleWorkout.exercise1.squat.variation);
+// console.log(sampleWorkout.exercise1.squat.variation);
 
 // input.addEventListener("input", () => {
 //   const { value } = this;
