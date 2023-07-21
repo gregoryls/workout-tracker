@@ -27,22 +27,26 @@ import * as exercises from "./exercises";
 const exerciseInput = document.getElementById("exerciseInput");
 const exerciseList = document.getElementById("exerciseList");
 const submitExercise = document.getElementById("submitExercise");
+const option = document.createElement("option");
 
 const list = exercises.exerciseList();
 console.log(list);
 
 exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
-  console.log(value);
+  // console.log(value);
   if (list[value]) {
-    console.log("sucess");
+    // console.log("sucess");
+    for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
+      console.log(Object.keys(list[value].variation)[i]);
+    }
   }
 });
 
 submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
   const exerciseOptions = exerciseList.options;
-  const option = document.createElement("option");
+
   let isContained = false;
 
   for (let i = 0; i < exerciseOptions.length; i += 1) {
