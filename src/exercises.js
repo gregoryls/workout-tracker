@@ -19,7 +19,7 @@
 //   return list;
 // }
 
-const sampleWorkout = {
+export const sampleWorkout = {
   date: new Date(),
   exercise1: {
     squat: {
@@ -66,5 +66,3 @@ export const list = {
     },
   },
 };
-
-export default sampleWorkout;
