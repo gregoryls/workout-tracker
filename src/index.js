@@ -1,5 +1,6 @@
 import "./style.css";
 import * as exercises from "./exercises";
+import * as utils from "./utils";
 
 // TODO
 // big list of exercise full names, e.g. flat barbell bench, incline dumbell bench etc.
@@ -32,6 +33,8 @@ const option = document.createElement("option");
 // console.log(list);
 const { list } = exercises;
 console.log(list);
+
+console.log(utils.default("test string"));
 
 exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
