@@ -1,24 +1,3 @@
-// export function exerciseList() {
-//   const list = {
-//     squat: {
-//       variation: {
-//         none: true,
-//         pause: true,
-//         tempo: {
-//           concentric: 1,
-//           eccentric: 2,
-//         },
-//       },
-//     },
-//     benchPress: {
-//       variation: {
-//         none: true,
-//       },
-//     },
-//   };
-//   return list;
-// }
-
 export const sampleWorkout = {
   date: new Date(),
   exercise1: {
