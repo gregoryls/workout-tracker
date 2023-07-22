@@ -1,23 +1,23 @@
-export function exerciseList() {
-  const list = {
-    squat: {
-      variation: {
-        none: true,
-        pause: true,
-        tempo: {
-          concentric: 1,
-          eccentric: 2,
-        },
-      },
-    },
-    benchPress: {
-      variation: {
-        none: true,
-      },
-    },
-  };
-  return list;
-}
+// export function exerciseList() {
+//   const list = {
+//     squat: {
+//       variation: {
+//         none: true,
+//         pause: true,
+//         tempo: {
+//           concentric: 1,
+//           eccentric: 2,
+//         },
+//       },
+//     },
+//     benchPress: {
+//       variation: {
+//         none: true,
+//       },
+//     },
+//   };
+//   return list;
+// }
 
 const sampleWorkout = {
   date: new Date(),
@@ -45,6 +45,24 @@ const sampleWorkout = {
         weight: 135,
         reps: 10,
       },
+    },
+  },
+};
+
+export const list = {
+  squat: {
+    variation: {
+      none: true,
+      pause: true,
+      tempo: {
+        concentric: 1,
+        eccentric: 2,
+      },
+    },
+  },
+  benchPress: {
+    variation: {
+      none: true,
     },
   },
 };

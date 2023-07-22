@@ -29,17 +29,18 @@ const exerciseList = document.getElementById("exerciseList");
 const submitExercise = document.getElementById("submitExercise");
 const option = document.createElement("option");
 
-const list = exercises.exerciseList();
+// console.log(list);
+const { list } = exercises;
 console.log(list);
 
 exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
   // console.log(value);
   if (list[value]) {
-    // console.log("sucess");
-    for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
-      console.log(Object.keys(list[value].variation)[i]);
-    }
+    console.log("sucess");
+    // for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
+    //   console.log(Object.keys(list[value].variation)[i]);
+    // }
   }
 });
 
