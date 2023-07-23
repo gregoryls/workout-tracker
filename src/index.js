@@ -32,7 +32,7 @@ const submitExercise = document.getElementById("submitExercise");
 const option = document.createElement("option");
 
 // console.log(list);
-const { list } = exercises;
+const list = exercises.exerciseList;
 console.log(list);
 
 console.log(utils.toCamelCase("test string"));

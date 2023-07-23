@@ -28,7 +28,7 @@ export const sampleWorkout = {
   },
 };
 
-export const list = {
+export const exerciseList = {
   squat: {
     variation: {
       none: true,
