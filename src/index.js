@@ -39,8 +39,9 @@ console.log(utils.toCamelCase("test string"));
 
 exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
-  // console.log(value);
-  if (list[value]) {
+  const valueCamelCase = utils.toCamelCase(value.toLowerCase());
+  // console.log(valueCamelCase);
+  if (list[valueCamelCase]) {
     console.log("sucess");
     // for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
     //   console.log(Object.keys(list[value].variation)[i]);
