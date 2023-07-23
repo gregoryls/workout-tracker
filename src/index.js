@@ -10,6 +10,7 @@ import * as utils from "./utils";
 // read more on destructuring
 // instead of directly adding new exercise, have some kind of dialogue
 // look into webpack library
+// set input to lower case before camel casing
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -34,7 +35,7 @@ const option = document.createElement("option");
 const { list } = exercises;
 console.log(list);
 
-console.log(utils.default("test string"));
+console.log(utils.toCamelCase("test string"));
 
 exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
