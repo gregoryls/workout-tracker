@@ -15,5 +15,9 @@ export function createCheckbox(variation) {
   const label = document.createElement("label");
   const div = document.createElement("div");
 
-  // setAttributes(input, {});
+  setAttributes(input, { name: variation, id: variation, value: variation });
+  setAttributes(label, { for: variation });
+  setAttributes(div, { id: `${variation}Variations` });
+
+  document.body.append(input, label, div);
 }
