@@ -10,14 +10,14 @@ function setAttributes(element, attribtues) {
   );
 }
 
-export function createCheckbox(variation) {
+export function createCheckbox(inputID, wrapperID) {
   const input = document.createElement("input");
   const label = document.createElement("label");
   const div = document.createElement("div");
 
-  setAttributes(input, { name: variation, id: variation, value: variation });
-  setAttributes(label, { for: variation });
-  setAttributes(div, { id: `${variation}Variations` });
+  setAttributes(input, { name: inputID, id: inputID, value: inputID });
+  setAttributes(label, { for: inputID });
+  setAttributes(div, { id: `${inputID}${wrapperID}` });
 
   document.body.append(input, label, div);
 }

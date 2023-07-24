@@ -52,7 +52,7 @@ exerciseInput.addEventListener("input", () => {
 submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
   const exerciseOptions = exerciseList.options;
-  utils.createCheckbox("test");
+  utils.createCheckbox("test", "Variations");
 
   let isContained = false;
 
