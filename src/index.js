@@ -10,7 +10,6 @@ import * as utils from "./utils";
 // read more on destructuring
 // instead of directly adding new exercise, have some kind of dialogue
 // look into webpack library
-// set input to lower case before camel casing
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -43,6 +42,7 @@ exerciseInput.addEventListener("input", () => {
   // console.log(valueCamelCase);
   if (list[valueCamelCase]) {
     console.log("sucess");
+    utils.createCheckbox("test", "Variations");
     // for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
     //   console.log(Object.keys(list[value].variation)[i]);
     // }
@@ -52,7 +52,6 @@ exerciseInput.addEventListener("input", () => {
 submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
   const exerciseOptions = exerciseList.options;
-  utils.createCheckbox("test", "Variations");
 
   let isContained = false;
 
