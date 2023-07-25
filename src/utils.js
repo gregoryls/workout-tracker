@@ -10,12 +10,17 @@ function setAttributes(element, attribtues) {
   );
 }
 
-export function createCheckbox(inputID, wrapperID) {
+export function createInput(inputType, inputID, wrapperID) {
   const input = document.createElement("input");
   const label = document.createElement("label");
   const div = document.createElement("div");
 
-  setAttributes(input, { name: inputID, id: inputID, value: inputID });
+  setAttributes(input, {
+    type: inputType,
+    name: inputID,
+    id: inputID,
+    value: inputID,
+  });
   setAttributes(label, { for: inputID });
   setAttributes(div, { id: `${inputID}${wrapperID}` });
 

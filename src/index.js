@@ -42,7 +42,7 @@ exerciseInput.addEventListener("input", () => {
   // console.log(valueCamelCase);
   if (list[valueCamelCase]) {
     console.log("sucess");
-    utils.createCheckbox("test", "Variations");
+    utils.createInput("checkbox", "test", "Variations");
     // for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
     //   console.log(Object.keys(list[value].variation)[i]);
     // }
