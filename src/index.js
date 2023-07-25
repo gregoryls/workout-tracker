@@ -29,6 +29,7 @@ const exerciseInput = document.getElementById("exerciseInput");
 const exerciseList = document.getElementById("exerciseList");
 const submitExercise = document.getElementById("submitExercise");
 const option = document.createElement("option");
+const variations = document.getElementById("variationInputs");
 
 // console.log(list);
 const list = exercises.exerciseList;
@@ -42,7 +43,8 @@ exerciseInput.addEventListener("input", () => {
   // console.log(valueCamelCase);
   if (list[valueCamelCase]) {
     console.log("sucess");
-    utils.createInput("checkbox", "test", "Variations");
+    const temp = utils.createInput("checkbox", "test", "Variations");
+    variations.append(temp);
     // for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
     //   console.log(Object.keys(list[value].variation)[i]);
     // }
