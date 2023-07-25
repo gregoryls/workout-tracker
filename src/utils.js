@@ -23,6 +23,7 @@ export function createInput(inputType, inputID, wrapperID) {
   });
   setAttributes(label, { for: inputID });
   setAttributes(div, { id: `${inputID}${wrapperID}` });
+  div.append(label, input);
 
-  document.body.append(input, label, div);
+  document.body.append(div);
 }
