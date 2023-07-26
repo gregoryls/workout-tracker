@@ -59,6 +59,8 @@ submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
   const exerciseOptions = exerciseList.options;
 
+  variations.innerHTML = "";
+
   let isContained = false;
 
   for (let i = 0; i < exerciseOptions.length; i += 1) {
