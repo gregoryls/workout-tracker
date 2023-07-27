@@ -42,10 +42,11 @@ exerciseInput.addEventListener("input", () => {
   const valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
   if (list[valueCamelCase]) {
+    variations.innerHTML = "";
     console.log("sucess");
     const keys = Object.keys(list[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
-      const temp = utils.createInput("checkbox", keys[i], "Variations");
+      const temp = utils.createInput("checkbox", keys[i], "Variation");
       variations.append(temp);
     }
 
@@ -58,8 +59,6 @@ exerciseInput.addEventListener("input", () => {
 submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
   const exerciseOptions = exerciseList.options;
-
-  variations.innerHTML = "";
 
   let isContained = false;
 
