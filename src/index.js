@@ -26,13 +26,13 @@ import * as utils from "./utils";
 // }
 
 const exerciseInput = document.getElementById("exerciseInput");
-const exerciseListElement = document.getElementById("exerciseList");
+// const exerciseListElement = document.getElementById("exerciseList");
 const submitExercise = document.getElementById("submitExercise");
-const option = document.createElement("option");
+// const option = document.createElement("option");
 const variations = document.getElementById("variationInputs");
 
 // console.log(list);
-const exerciseListObj = exercises.exerciseListElement;
+const exerciseListObj = exercises.exerciseList;
 console.log(exerciseListObj);
 
 console.log(utils.toCamelCase("test string"));
@@ -58,18 +58,23 @@ exerciseInput.addEventListener("input", () => {
 
 submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
-  const exerciseOptions = exerciseListElement.options;
+  // const exerciseOptions = exerciseListElement.options;
+  const valueCamelCase = utils.toCamelCase(value.toLowerCase());
 
   let isContained = false;
+  const keys = Object.keys(exerciseListObj);
+  console.log(keys);
 
-  for (let i = 0; i < exerciseOptions.length; i += 1) {
-    if (exerciseOptions[i].value.toLowerCase() === value.toLowerCase()) {
+  for (let i = 0; i < keys.length; i += 1) {
+    console.log(i);
+    const movement = exerciseListObj[valueCamelCase];
+    console.log(movement);
+    if (exerciseListObj[valueCamelCase]) {
       isContained = true;
     }
   }
   if (!isContained) {
-    option.value = value;
-    exerciseListElement.append(option);
+    console.log(value);
   }
 });
 
