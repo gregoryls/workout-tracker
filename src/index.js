@@ -26,14 +26,14 @@ import * as utils from "./utils";
 // }
 
 const exerciseInput = document.getElementById("exerciseInput");
-const exerciseList = document.getElementById("exerciseList");
+const exerciseListElement = document.getElementById("exerciseList");
 const submitExercise = document.getElementById("submitExercise");
 const option = document.createElement("option");
 const variations = document.getElementById("variationInputs");
 
 // console.log(list);
-const list = exercises.exerciseList;
-console.log(list);
+const exerciseListObj = exercises.exerciseListElement;
+console.log(exerciseListObj);
 
 console.log(utils.toCamelCase("test string"));
 
@@ -41,10 +41,10 @@ exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
   const valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
-  if (list[valueCamelCase]) {
+  if (exerciseListObj[valueCamelCase]) {
     variations.innerHTML = "";
     console.log("sucess");
-    const keys = Object.keys(list[valueCamelCase].variation);
+    const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
       const temp = utils.createInput("checkbox", keys[i], "Variation");
       variations.append(temp);
@@ -58,7 +58,7 @@ exerciseInput.addEventListener("input", () => {
 
 submitExercise.addEventListener("click", () => {
   const { value } = exerciseInput;
-  const exerciseOptions = exerciseList.options;
+  const exerciseOptions = exerciseListElement.options;
 
   let isContained = false;
 
@@ -69,7 +69,7 @@ submitExercise.addEventListener("click", () => {
   }
   if (!isContained) {
     option.value = value;
-    exerciseList.append(option);
+    exerciseListElement.append(option);
   }
 });
 
@@ -80,7 +80,7 @@ submitExercise.addEventListener("click", () => {
 
 //   const newExercise = document.createElement("option");
 //   newExercise.value = value;
-//   exerciseList.append(newExercise);
+//   exerciseListElement.append(newExercise);
 //   this.value = value;
 // });
 
