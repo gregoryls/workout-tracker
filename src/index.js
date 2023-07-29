@@ -72,7 +72,7 @@ submitExercise.addEventListener("click", () => {
     }
   }
   if (!isContained) {
-    exerciseListObj[value] = {};
+    exerciseListObj[value] = { variation: { none: true } };
     console.log(exerciseListObj);
   }
 });
