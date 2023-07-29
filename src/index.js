@@ -35,8 +35,6 @@ const variations = document.getElementById("variationInputs");
 const exerciseListObj = exercises.exerciseList;
 console.log(exerciseListObj);
 
-console.log(utils.toCamelCase("test string"));
-
 exerciseInput.addEventListener("input", () => {
   const { value } = exerciseInput;
   const valueCamelCase = utils.toCamelCase(value.toLowerCase());
@@ -74,7 +72,8 @@ submitExercise.addEventListener("click", () => {
     }
   }
   if (!isContained) {
-    console.log(value);
+    exerciseListObj[value] = {};
+    console.log(exerciseListObj);
   }
 });
 
