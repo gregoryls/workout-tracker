@@ -7,10 +7,10 @@
     <title>Workout</title>
   </head>
   <body>
-    <label for="exerciseInput">Movement:</label>
-    <input type="text" id="exerciseInput" list="exerciseList" />
-
-    <div id="variationInputs"></div>
+    <div id="exerciseInputWrap">
+      <label for="exerciseInput">Movement:</label>
+      <input type="text" id="exerciseInput" list="exerciseList" />
+    </div>
 
     <datalist id="exerciseInputOptions">
       <option value="squat"></option>
@@ -22,6 +22,12 @@
       <option value="tricep"></option>
     </datalist>
 
+    <div id="variationInputs"></div>
+
+    <div id="setNumberWrap">
+      <label for="setNumber">Set #:</label>
+      <input type="number" id="setNumber" />
+    </div>
     <!-- <datalist id="variationInput"> </datalist> -->
 
     <!-- <label for="movement">
