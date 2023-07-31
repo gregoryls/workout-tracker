@@ -39,7 +39,7 @@ export function getSetInput() {
   return input.value;
 }
 export function getWeightInput() {
-  const input = document.getElementById("weightInput");
+  const input = document.getElementById("weight");
   return input.value;
 }
 export function getRepsInput() {
