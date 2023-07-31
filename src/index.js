@@ -37,7 +37,7 @@ const exerciseListObj = exercises.exerciseList;
 console.log(exerciseListObj);
 
 exerciseInput.addEventListener("input", () => {
-  const { value } = exerciseInput;
+  const value = utils.getMovementInput();
   const valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
   if (exerciseListObj[valueCamelCase]) {
@@ -56,7 +56,8 @@ exerciseInput.addEventListener("input", () => {
 });
 
 submitExercise.addEventListener("click", () => {
-  const { value } = exerciseInput;
+  const value = utils.getMovementInput();
+
   // const exerciseOptions = exerciseListElement.options;
   const valueCamelCase = utils.toCamelCase(value.toLowerCase());
 

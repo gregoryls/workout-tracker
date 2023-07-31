@@ -28,3 +28,8 @@ export function createInput(inputType, inputID, wrapperID) {
 
   return div;
 }
+
+export function getMovementInput() {
+  const input = document.getElementById("exerciseInput");
+  return input.value;
+}
