@@ -38,3 +38,7 @@ export function getSetInput() {
   const input = document.getElementById("setNumber");
   return input.value;
 }
+export function getWeightInput() {
+  const input = document.getElementById("weightInput");
+  return input.value;
+}
