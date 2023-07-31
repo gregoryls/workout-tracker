@@ -33,3 +33,8 @@ export function getMovementInput() {
   const input = document.getElementById("exerciseInput");
   return input.value;
 }
+
+export function getSetInput() {
+  const input = document.getElementById("setNumber");
+  return input.value;
+}
