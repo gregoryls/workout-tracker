@@ -11,6 +11,7 @@ import * as utils from "./utils";
 // instead of directly adding new exercise, have some kind of dialogue
 // look into webpack library
 // build inputs for sets, reps, weight etc
+// toggle to switch between RPE or RiR
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
