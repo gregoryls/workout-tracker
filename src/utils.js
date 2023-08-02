@@ -46,3 +46,7 @@ export function getRepsInput() {
   const input = document.getElementById("reps");
   return input.value;
 }
+export function getRpeInput() {
+  const input = document.getElementById("rpe");
+  return input.value;
+}
