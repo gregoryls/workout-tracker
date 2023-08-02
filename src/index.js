@@ -58,6 +58,7 @@ exerciseInput.addEventListener("input", () => {
 
 submitExercise.addEventListener("click", () => {
   const value = utils.getMovementInput();
+  console.log(utils.getInputValue("rpe"));
 
   // const exerciseOptions = exerciseListElement.options;
   const valueCamelCase = utils.toCamelCase(value.toLowerCase());
@@ -67,10 +68,10 @@ submitExercise.addEventListener("click", () => {
   console.log(keys);
 
   for (let i = 0; i < keys.length; i += 1) {
-    console.log(i);
+    // console.log(i);
     const movement = exerciseListObj[valueCamelCase];
-    console.log(movement);
-    if (exerciseListObj[valueCamelCase]) {
+    // console.log(movement);
+    if (movement) {
       isContained = true;
     }
   }

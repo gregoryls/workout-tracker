@@ -50,3 +50,7 @@ export function getRpeInput() {
   const input = document.getElementById("rpe");
   return input.value;
 }
+export function getInputValue(inputID) {
+  const input = document.getElementById(inputID);
+  return input.value;
+}
