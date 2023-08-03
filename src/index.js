@@ -82,6 +82,8 @@ submitExercise.addEventListener("click", () => {
     exerciseListObj[value] = { variation: { none: true } };
     console.log(exerciseListObj);
   }
+
+  utils.generateMovementObj();
 });
 
 // console.log(sampleWorkout.exercise1.squat.variation);

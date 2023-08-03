@@ -54,3 +54,22 @@ export function getInputValue(inputID) {
   const input = document.getElementById(inputID);
   return input.value;
 }
+
+export function generateMovementObj() {
+  const movement = getMovementInput();
+  const set = getSetInput();
+  const weight = getWeightInput();
+  const reps = getRepsInput();
+  const rpe = getRpeInput();
+
+  const obj = {
+    [movement]: {
+      [`set${set}`]: {
+        weight,
+        reps,
+        rpe,
+      },
+    },
+  };
+  console.log(obj);
+}
