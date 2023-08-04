@@ -3,6 +3,11 @@ body {
   color: white;
 }
 
+body div {
+  border: 1px solid white;
+  margin: 10px;
+}
+
 #squatOptions {
   visibility: hidden;
 }
