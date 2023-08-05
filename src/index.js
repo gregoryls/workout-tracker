@@ -13,6 +13,7 @@ import * as utils from "./utils";
 // build inputs for sets, reps, weight etc
 // toggle to switch between RPE or RiR
 // write function to add entry to exercise list
+// consider displaying movements as capital first letter vs all lower
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },

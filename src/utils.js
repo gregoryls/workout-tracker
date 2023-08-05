@@ -5,7 +5,7 @@ export function toCamelCase(string) {
 }
 
 export function removeCamelCase(string) {
-  string.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
+  return string.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
 }
 
 function setAttributes(element, attribtues) {
@@ -40,7 +40,7 @@ export function fillDatalist(listID, obj) {
 
   for (let i = 0; i < keys.length; i += 1) {
     const option = document.createElement("option");
-    option.value = keys[i];
+    option.value = removeCamelCase(keys[i]);
     list.append(option);
   }
 }
