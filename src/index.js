@@ -12,6 +12,7 @@ import * as utils from "./utils";
 // look into webpack library
 // build inputs for sets, reps, weight etc
 // toggle to switch between RPE or RiR
+// write function to add entry to exercise list
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -36,6 +37,8 @@ const variations = document.getElementById("variationInputs");
 // console.log(list);
 const exerciseListObj = exercises.exerciseList;
 console.log(exerciseListObj);
+
+utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
 exerciseInput.addEventListener("input", () => {
   const value = utils.getMovementInput();

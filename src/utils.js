@@ -29,6 +29,18 @@ export function createInput(inputType, inputID, wrapperID) {
   return div;
 }
 
+export function fillDatalist(listID, obj) {
+  const list = document.getElementById(listID);
+
+  const keys = Object.keys(obj);
+
+  for (let i = 0; i < keys.length; i += 1) {
+    const option = document.createElement("option");
+    option.value = keys[i];
+    list.append(option);
+  }
+}
+
 export function getMovementInput() {
   const input = document.getElementById("exerciseInput");
   return input.value;
