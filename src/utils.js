@@ -4,6 +4,10 @@ export function toCamelCase(string) {
   return string.replace(/[-_\s](.)/g, (_, char) => char.toUpperCase());
 }
 
+export function removeCamelCase(string) {
+  string.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
+}
+
 function setAttributes(element, attribtues) {
   Object.keys(attribtues).forEach((key) =>
     element.setAttribute(key, attribtues[key]),
