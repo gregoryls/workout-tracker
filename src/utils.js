@@ -74,10 +74,16 @@ export function getInputValue(inputID) {
 export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");
   const variations = variationInputs.childNodes;
+  const x = [];
 
   variations.forEach((variant) => {
-    console.log(variant.children[1].value);
+    if (variant.children[1].checked) {
+      console.log(variant.children[1].value);
+      x.push(variant.children[1].value);
+      console.log(x);
+    }
   });
+  return x;
 }
 
 export function generateMovementObj() {
