@@ -75,14 +75,14 @@ exerciseInput.addEventListener("input", () => {
 });
 
 submitExercise.addEventListener("click", () => {
-  const value = utils.getMovementInput();
+  // const value = utils.getMovementInput();
   // console.log(utils.getInputValue("rpe"));
 
   // don't add null entry to exercise list object
   if (value === "") return;
 
   // const exerciseOptions = exerciseListElement.options;
-  const valueCamelCase = utils.toCamelCase(value.toLowerCase());
+  // const valueCamelCase = utils.toCamelCase(value.toLowerCase());
 
   let isContained = false;
   const keys = Object.keys(exerciseListObj);

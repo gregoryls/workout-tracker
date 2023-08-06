@@ -75,9 +75,9 @@ export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");
   const variations = variationInputs.childNodes;
 
-  // variations.forEach()
-
-  console.log(variations);
+  variations.forEach((variant) => {
+    console.log(variant.children[1].value);
+  });
 }
 
 export function generateMovementObj() {
