@@ -71,6 +71,15 @@ export function getInputValue(inputID) {
   return input.value;
 }
 
+export function getVariationInput() {
+  const variationInputs = document.getElementById("variationInputs");
+  const variations = variationInputs.childNodes;
+
+  // variations.forEach()
+
+  console.log(variations);
+}
+
 export function generateMovementObj() {
   const movement = getMovementInput();
   const set = getSetInput();

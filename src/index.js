@@ -14,6 +14,7 @@ import * as utils from "./utils";
 // toggle to switch between RPE or RiR
 // write function to add entry to exercise list
 // consider displaying movements as capital first letter vs all lower
+// consider a number hidden from user for ordering movements in a workout
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -41,9 +42,22 @@ console.log(exerciseListObj);
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
+const value = utils.getMovementInput();
+const valueCamelCase = utils.toCamelCase(value.toLowerCase());
+// console.log(valueCamelCase);
+if (exerciseListObj[valueCamelCase]) {
+  variations.innerHTML = "";
+  console.log("sucess");
+  const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
+  for (let i = 0; i < keys.length; i += 1) {
+    const temp = utils.createInput("checkbox", keys[i], "Variation");
+    variations.append(temp);
+  }
+}
+
 exerciseInput.addEventListener("input", () => {
-  const value = utils.getMovementInput();
-  const valueCamelCase = utils.toCamelCase(value.toLowerCase());
+  // const value = utils.getMovementInput();
+  // const valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
   if (exerciseListObj[valueCamelCase]) {
     variations.innerHTML = "";
@@ -72,7 +86,7 @@ submitExercise.addEventListener("click", () => {
 
   let isContained = false;
   const keys = Object.keys(exerciseListObj);
-  console.log(keys);
+  // console.log(keys);
 
   for (let i = 0; i < keys.length; i += 1) {
     // console.log(i);
@@ -88,6 +102,7 @@ submitExercise.addEventListener("click", () => {
   }
 
   utils.generateMovementObj();
+  utils.getVariationInput();
 });
 
 // console.log(sampleWorkout.exercise1.squat.variation);
