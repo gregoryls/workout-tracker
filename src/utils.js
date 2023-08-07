@@ -105,7 +105,11 @@ export function generateMovementObj() {
     },
   };
 
+  if (variationInput.length < 1) {
+    obj[movement][`set${set}`].variations.none = true;
+  }
   for (let i = 0; i < variationInput.length; i += 1) {
+    if (variationInput.length < 1) console.log("none");
     obj[movement][`set${set}`].variations[variationInput[i]] = true;
   }
   console.log(obj);
