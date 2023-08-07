@@ -92,6 +92,7 @@ export function generateMovementObj() {
   const weight = getWeightInput();
   const reps = getRepsInput();
   const rpe = getRpeInput();
+  const variations = getVariationInput();
 
   const obj = {
     [movement]: {

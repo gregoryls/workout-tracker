@@ -15,6 +15,7 @@ import * as utils from "./utils";
 // write function to add entry to exercise list
 // consider displaying movements as capital first letter vs all lower
 // consider a number hidden from user for ordering movements in a workout
+// finish variant input for movement builder
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -42,8 +43,8 @@ console.log(exerciseListObj);
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
-const value = utils.getMovementInput();
-const valueCamelCase = utils.toCamelCase(value.toLowerCase());
+let value = utils.getMovementInput();
+let valueCamelCase = utils.toCamelCase(value.toLowerCase());
 // console.log(valueCamelCase);
 if (exerciseListObj[valueCamelCase]) {
   variations.innerHTML = "";
@@ -56,8 +57,8 @@ if (exerciseListObj[valueCamelCase]) {
 }
 
 exerciseInput.addEventListener("input", () => {
-  // const value = utils.getMovementInput();
-  // const valueCamelCase = utils.toCamelCase(value.toLowerCase());
+  value = utils.getMovementInput();
+  valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
   if (exerciseListObj[valueCamelCase]) {
     variations.innerHTML = "";
