@@ -78,9 +78,9 @@ export function getVariationInput() {
 
   variations.forEach((variant) => {
     if (variant.children[1].checked) {
-      console.log(variant.children[1].value);
+      // console.log(variant.children[1].value);
       x.push(variant.children[1].value);
-      console.log(x);
+      // console.log(x);
     }
   });
   return x;
@@ -92,16 +92,21 @@ export function generateMovementObj() {
   const weight = getWeightInput();
   const reps = getRepsInput();
   const rpe = getRpeInput();
-  const variations = getVariationInput();
+  const variationInput = getVariationInput();
 
   const obj = {
     [movement]: {
       [`set${set}`]: {
+        variations: {},
         weight,
         reps,
         rpe,
       },
     },
   };
+
+  for (let i = 0; i < variationInput.length; i += 1) {
+    obj[movement][`set${set}`].variations[variationInput[i]] = true;
+  }
   console.log(obj);
 }
