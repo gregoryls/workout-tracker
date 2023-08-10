@@ -80,7 +80,9 @@ exerciseInput.addEventListener("input", () => {
 newVariationButton.addEventListener("click", () => {
   const newVariationInput = document.getElementById("newVariationInput");
   const newVariationValue = newVariationInput.value;
-  console.log(newVariationValue);
+
+  exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
+  console.log(exerciseListObj[valueCamelCase]);
 });
 
 submitExercise.addEventListener("click", () => {

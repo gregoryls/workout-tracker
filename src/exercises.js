@@ -31,7 +31,7 @@ export const sampleWorkout = {
 export const exerciseList = {
   squat: {
     variation: {
-      none: true,
+      none: false,
       pause: true,
       tempo: {
         concentric: 1,
