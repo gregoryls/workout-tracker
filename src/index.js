@@ -79,7 +79,7 @@ exerciseInput.addEventListener("input", () => {
 
 newVariationButton.addEventListener("click", () => {
   const newVariationInput = document.getElementById("newVariationInput");
-  const { newVariationValue } = newVariationInput;
+  const newVariationValue = newVariationInput.value;
   console.log(newVariationValue);
 });
 
