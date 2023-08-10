@@ -16,6 +16,7 @@ import * as utils from "./utils";
 // consider displaying movements as capital first letter vs all lower
 // consider a number hidden from user for ordering movements in a workout
 // new variation js
+// change variation button to somethign like clickable text
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -36,6 +37,7 @@ const exerciseInput = document.getElementById("exerciseInput");
 const submitExercise = document.getElementById("submitExercise");
 // const option = document.createElement("option");
 const variations = document.getElementById("variationInputs");
+const newVariationButton = document.getElementById("submitNewVariation");
 
 // console.log(list);
 const exerciseListObj = exercises.exerciseList;
@@ -73,6 +75,12 @@ exerciseInput.addEventListener("input", () => {
     //   console.log(Object.keys(list[value].variation)[i]);
     // }
   }
+});
+
+newVariationButton.addEventListener("click", () => {
+  const newVariationInput = document.getElementById("newVariationInput");
+  const { newVariationValue } = newVariationInput;
+  console.log(newVariationValue);
 });
 
 submitExercise.addEventListener("click", () => {
