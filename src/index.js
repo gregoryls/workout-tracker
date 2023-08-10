@@ -15,7 +15,7 @@ import * as utils from "./utils";
 // write function to add entry to exercise list
 // consider displaying movements as capital first letter vs all lower
 // consider a number hidden from user for ordering movements in a workout
-// finish variant input for movement builder
+// new variation js
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
