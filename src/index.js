@@ -17,6 +17,7 @@ import * as utils from "./utils";
 // consider a number hidden from user for ordering movements in a workout
 // new variation js
 // change variation button to somethign like clickable text
+// work on new variation logic
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -53,8 +54,10 @@ if (exerciseListObj[valueCamelCase]) {
   console.log("sucess");
   const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
   for (let i = 0; i < keys.length; i += 1) {
-    const temp = utils.createInput("checkbox", keys[i], "Variation");
-    variations.append(temp);
+    if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
+      const temp = utils.createInput("checkbox", keys[i], "Variation");
+      variations.append(temp);
+    }
   }
 }
 
@@ -67,8 +70,10 @@ exerciseInput.addEventListener("input", () => {
     console.log("sucess");
     const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
-      const temp = utils.createInput("checkbox", keys[i], "Variation");
-      variations.append(temp);
+      if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
+        const temp = utils.createInput("checkbox", keys[i], "Variation");
+        variations.append(temp);
+      }
     }
 
     // for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
