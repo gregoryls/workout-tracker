@@ -57,6 +57,16 @@ if (exerciseListObj[valueCamelCase]) {
     if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
       const temp = utils.createInput("checkbox", keys[i], "Variation");
       variations.append(temp);
+      if (keys[i] === "tempo") {
+        temp.addEventListener("change", (event) => {
+          if (event.target.checked) {
+            console.log("checked");
+          }
+          if (!event.target.checked) {
+            console.log("unchecked");
+          }
+        });
+      }
     }
   }
 }
