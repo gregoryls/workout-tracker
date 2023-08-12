@@ -60,7 +60,17 @@ if (exerciseListObj[valueCamelCase]) {
       if (keys[i] === "tempo") {
         temp.addEventListener("change", (event) => {
           if (event.target.checked) {
-            console.log("checked");
+            const eccentric = utils.createInput(
+              "number",
+              "eccentric",
+              "eccentric",
+            );
+            const concentric = utils.createInput(
+              "number",
+              "concentric",
+              "concentric",
+            );
+            variations.append(eccentric, concentric);
           }
           if (!event.target.checked) {
             console.log("unchecked");
