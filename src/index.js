@@ -58,10 +58,10 @@ if (exerciseListObj[valueCamelCase]) {
       const temp = utils.createInput("checkbox", keys[i], "VariationCheck");
       variations.append(temp);
       if (keys[i] === "tempo") {
-        const tempoWrap = document.createElement("div");
-        tempoWrap.id = "tempoVariationWrap";
         temp.addEventListener("change", (event) => {
           if (event.target.checked) {
+            const tempoWrap = document.createElement("div");
+            tempoWrap.id = "tempoVariationWrap";
             const eccentric = utils.createInput(
               "number",
               "eccentric",
@@ -76,7 +76,8 @@ if (exerciseListObj[valueCamelCase]) {
             variations.append(tempoWrap);
           }
           if (!event.target.checked) {
-            console.log("unchecked");
+            const tempoWrap = document.getElementById("tempoVariationWrap");
+            tempoWrap.innerHTML = "";
           }
         });
       }
