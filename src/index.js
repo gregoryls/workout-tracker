@@ -77,7 +77,7 @@ if (exerciseListObj[valueCamelCase]) {
           }
           if (!event.target.checked) {
             const tempoWrap = document.getElementById("tempoVariationWrap");
-            tempoWrap.innerHTML = "";
+            tempoWrap.remove();
           }
         });
       }
