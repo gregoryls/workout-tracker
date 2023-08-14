@@ -70,6 +70,11 @@ export function getInputValue(inputID) {
   const input = document.getElementById(inputID);
   return input.value;
 }
+export function getTempoValues() {
+  const eccentric = document.getElementById("eccentric");
+  const concentric = document.getElementById("concentric");
+  return [eccentric.value, concentric.value];
+}
 
 export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");

@@ -86,6 +86,7 @@ if (exerciseListObj[valueCamelCase]) {
 }
 
 exerciseInput.addEventListener("input", () => {
+  console.log(utils.getTempoValues());
   value = utils.getMovementInput();
   valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
