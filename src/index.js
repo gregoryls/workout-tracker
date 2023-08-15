@@ -142,7 +142,7 @@ submitExercise.addEventListener("click", () => {
   // const value = utils.getMovementInput();
   // console.log(utils.getInputValue("rpe"));
 
-  // don't add null entry to exercise list object
+  // don't add empty entry to exercise list object
   if (value === "") return;
 
   // const exerciseOptions = exerciseListElement.options;
@@ -161,12 +161,12 @@ submitExercise.addEventListener("click", () => {
     }
   }
   if (!isContained) {
-    exerciseListObj[value] = { variation: { none: true } };
+    exerciseListObj[valueCamelCase] = { variation: { none: true } };
     console.log(exerciseListObj);
   }
 
   utils.generateMovementObj();
-  utils.getVariationInput();
+  // utils.getVariationInput();
 });
 
 // console.log(sampleWorkout.exercise1.squat.variation);
