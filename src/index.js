@@ -10,7 +10,6 @@ import * as utils from "./utils";
 // read more on destructuring
 // instead of directly adding new exercise, have some kind of dialogue
 // look into webpack library
-// build inputs for sets, reps, weight etc
 // toggle to switch between RPE or RiR
 // write function to add entry to exercise list
 // consider displaying movements as capital first letter vs all lower
@@ -18,6 +17,7 @@ import * as utils from "./utils";
 // new variation js
 // change variation button to somethign like clickable text
 // work on new variation logic
+// comments
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -86,12 +86,11 @@ if (exerciseListObj[valueCamelCase]) {
 }
 
 exerciseInput.addEventListener("input", () => {
-  console.log(utils.getTempoValues());
   value = utils.getMovementInput();
   valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
+  variations.innerHTML = "";
   if (exerciseListObj[valueCamelCase]) {
-    variations.innerHTML = "";
     console.log("sucess");
     const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
