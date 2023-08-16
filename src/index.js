@@ -33,6 +33,8 @@ import * as utils from "./utils";
 //   }
 // }
 
+console.log(exercises.sampleWorkout());
+
 const exerciseInput = document.getElementById("exerciseInput");
 // const exerciseListElement = document.getElementById("exerciseList");
 const submitExercise = document.getElementById("submitExercise");
@@ -168,8 +170,6 @@ submitExercise.addEventListener("click", () => {
   utils.generateMovementObj();
   // utils.getVariationInput();
 });
-
-// console.log(sampleWorkout.exercise1.squat.variation);
 
 // input.addEventListener("input", () => {
 //   const { value } = this;
