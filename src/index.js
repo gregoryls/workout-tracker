@@ -46,6 +46,8 @@ const newVariationButton = document.getElementById("submitNewVariation");
 const exerciseListObj = exercises.exerciseList;
 console.log(exerciseListObj);
 
+const workoutArray = [];
+
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
 let value = utils.getMovementInput();
@@ -167,7 +169,8 @@ submitExercise.addEventListener("click", () => {
     console.log(exerciseListObj);
   }
 
-  utils.generateMovementObj();
+  // workoutArray.push(utils.generateMovementObj());
+  // console.log(workoutArray);
   // utils.getVariationInput();
 });
 
