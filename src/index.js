@@ -169,8 +169,8 @@ submitExercise.addEventListener("click", () => {
     console.log(exerciseListObj);
   }
 
-  // workoutArray.push(utils.generateMovementObj());
-  // console.log(workoutArray);
+  workoutArray.push(utils.generateMovementObj());
+  console.log(workoutArray);
   // utils.getVariationInput();
 });
 
