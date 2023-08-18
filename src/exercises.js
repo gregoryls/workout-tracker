@@ -36,9 +36,9 @@ export function generateWorkoutObj(movements) {
   const obj = {};
   obj.date = new Date();
 
-  for (let i = 1; i < movements.length + 1; i += 1) {
+  for (let i = 0; i < movements.length; i += 1) {
     const movement = movements[i];
-    obj[i] = movement;
+    obj[`exercise${i + 1}`] = movement;
   }
   console.log(obj);
 }
