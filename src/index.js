@@ -18,6 +18,9 @@ import * as utils from "./utils";
 // change variation button to somethign like clickable text
 // work on new variation logic
 // comments
+// add movements to workout array, display array contents in some collapsible form
+// iterate through the workout array to build the final workout object
+// let user set date
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -171,6 +174,7 @@ submitExercise.addEventListener("click", () => {
 
   workoutArray.push(utils.generateMovementObj());
   console.log(workoutArray);
+  exercises.generateWorkoutObj(workoutArray);
   // utils.getVariationInput();
 });
 
