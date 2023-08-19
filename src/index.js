@@ -174,7 +174,7 @@ submitExercise.addEventListener("click", () => {
 
   workoutArray.push(utils.generateMovementObj());
   console.log(workoutArray);
-  exercises.generateWorkoutObj(workoutArray);
+  utils.generateWorkoutObj(workoutArray);
   // utils.getVariationInput();
 });
 
