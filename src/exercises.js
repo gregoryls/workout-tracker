@@ -31,18 +31,6 @@ export function sampleWorkout() {
   return obj;
 }
 
-// accepts an array of movement objects as a parameter
-export function generateWorkoutObj(movements) {
-  const obj = {};
-  obj.date = new Date();
-
-  for (let i = 0; i < movements.length; i += 1) {
-    const movement = movements[i];
-    obj[`exercise${i + 1}`] = movement;
-  }
-  console.log(obj);
-}
-
 export const exerciseList = {
   squat: {
     variation: {
