@@ -8,6 +8,11 @@
   <script defer src="index.bundle.js"></script><script defer src="exercises.bundle.js"></script><script defer src="utils.bundle.js"></script></head>
   <body>
     <form onsubmit="return false" id="testForm">
+      <div id="dateWrap">
+        <label for="dateInput">Workout datetime:</label>
+        <input type="datetime-local" id="dateInput" />
+      </div>
+
       <div id="exerciseInputWrap">
         <label for="exerciseInput">Movement:</label>
         <input
