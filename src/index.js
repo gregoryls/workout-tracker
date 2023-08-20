@@ -21,6 +21,7 @@ import * as utils from "./utils";
 // add movements to workout array, display array contents in some collapsible form
 // iterate through the workout array to build the final workout object
 // let user set date
+// merit to simply storing workout data as array of objects, first array item is date?
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -176,6 +177,8 @@ submitExercise.addEventListener("click", () => {
   console.log(workoutArray);
   utils.generateWorkoutObj(workoutArray);
   // utils.getVariationInput();
+
+  console.log(utils.getDateTime());
 });
 
 // input.addEventListener("input", () => {

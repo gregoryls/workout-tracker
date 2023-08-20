@@ -75,6 +75,10 @@ export function getTempoValues() {
   const concentric = document.getElementById("concentric");
   return [eccentric.value, concentric.value];
 }
+export function getDateTime() {
+  const datetime = document.getElementById("dateInput");
+  return datetime.value;
+}
 
 export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");
@@ -131,3 +135,5 @@ export function generateWorkoutObj(movements) {
   }
   console.log(obj);
 }
+
+export function displayWorkoutInProgress(workout) {}
