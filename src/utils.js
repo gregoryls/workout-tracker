@@ -127,7 +127,7 @@ export function generateMovementObj() {
 // accepts an array of movement objects as a parameter
 export function generateWorkoutObj(movements) {
   const obj = {};
-  obj.date = new Date();
+  obj.date = getDateTime();
 
   for (let i = 0; i < movements.length; i += 1) {
     const movement = movements[i];
