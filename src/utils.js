@@ -77,7 +77,7 @@ export function getTempoValues() {
 }
 export function getDateTime() {
   const datetime = document.getElementById("dateInput");
-  return datetime.value;
+  return datetime.valueAsDate;
 }
 
 export function getVariationInput() {
