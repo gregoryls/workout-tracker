@@ -83,6 +83,7 @@ export function getDateTime() {
 export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");
   const variations = variationInputs.childNodes;
+  // rename x
   const x = [];
 
   variations.forEach((variant) => {
@@ -95,8 +96,7 @@ export function getVariationInput() {
   return x;
 }
 
-export function generateMovementObj() {
-  const movement = getMovementInput();
+export function generateSetObj(movementObj) {
   const set = getSetInput();
   const weight = getWeightInput();
   const reps = getRepsInput();
@@ -104,23 +104,31 @@ export function generateMovementObj() {
   const variationInput = getVariationInput();
 
   const obj = {
-    [movement]: {
-      [`set${set}`]: {
-        variations: {},
-        weight,
-        reps,
-        rpe,
-      },
+    [`set${set}`]: {
+      variations: {},
+      weight,
+      reps,
+      rpe,
     },
   };
 
   if (variationInput.length < 1) {
-    obj[movement][`set${set}`].variations.none = true;
+    obj[`set${set}`].variations.none = true;
   }
   for (let i = 0; i < variationInput.length; i += 1) {
     if (variationInput.length < 1) console.log("none");
-    obj[movement][`set${set}`].variations[variationInput[i]] = true;
+    obj[`set${set}`].variations[variationInput[i]] = true;
   }
+  return obj;
+}
+
+export function generateMovementObj() {
+  const movement = getMovementInput();
+
+  const obj = {
+    [movement]: {},
+  };
+
   return obj;
 }
 

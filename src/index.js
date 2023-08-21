@@ -23,6 +23,7 @@ import * as utils from "./utils";
 // let user set date
 // merit to simply storing workout data as array of objects, first array item is date?
 // ^^^, build as obj from start, apply user date during final submit
+// set input starts at 1 and increments itself outside user control (can edit later)
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -157,14 +158,13 @@ submitExercise.addEventListener("click", () => {
   // const exerciseOptions = exerciseListElement.options;
   // const valueCamelCase = utils.toCamelCase(value.toLowerCase());
 
-  let isContained = false;
   const keys = Object.keys(exerciseListObj);
   // console.log(keys);
 
+  // checks current list of movements; adds unique movements to exercise list
+  let isContained = false;
   for (let i = 0; i < keys.length; i += 1) {
-    // console.log(i);
     const movement = exerciseListObj[valueCamelCase];
-    // console.log(movement);
     if (movement) {
       isContained = true;
     }
@@ -173,11 +173,14 @@ submitExercise.addEventListener("click", () => {
     exerciseListObj[valueCamelCase] = { variation: { none: true } };
     console.log(exerciseListObj);
   }
+  //
 
   workoutArray.push(utils.generateMovementObj());
   console.log(workoutArray);
-  utils.generateWorkoutObj(workoutArray);
-  // utils.getVariationInput();
+
+  for (let i = 0; i < workoutArray.length; i += 1) {
+    console.log(workoutArray[i]);
+  }
 });
 
 // input.addEventListener("input", () => {
