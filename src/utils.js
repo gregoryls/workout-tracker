@@ -133,7 +133,7 @@ export function generateWorkoutObj(movements) {
     const movement = movements[i];
     obj[`exercise${i + 1}`] = movement;
   }
-  console.log(obj);
+  return obj;
 }
 
 export function displayWorkoutInProgress(workout) {}

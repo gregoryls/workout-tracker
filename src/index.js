@@ -22,6 +22,7 @@ import * as utils from "./utils";
 // iterate through the workout array to build the final workout object
 // let user set date
 // merit to simply storing workout data as array of objects, first array item is date?
+// ^^^, build as obj from start, apply user date during final submit
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -177,8 +178,6 @@ submitExercise.addEventListener("click", () => {
   console.log(workoutArray);
   utils.generateWorkoutObj(workoutArray);
   // utils.getVariationInput();
-
-  console.log(utils.getDateTime());
 });
 
 // input.addEventListener("input", () => {
