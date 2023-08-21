@@ -96,14 +96,16 @@ export function getVariationInput() {
   return x;
 }
 
-export function generateSetObj(movementObj) {
+export function generateSetObj(obj) {
+  const movement = getMovementInput();
   const set = getSetInput();
   const weight = getWeightInput();
   const reps = getRepsInput();
   const rpe = getRpeInput();
   const variationInput = getVariationInput();
 
-  const obj = {
+  const movementObj = obj;
+  const setObj = {
     [`set${set}`]: {
       variations: {},
       weight,
@@ -113,13 +115,15 @@ export function generateSetObj(movementObj) {
   };
 
   if (variationInput.length < 1) {
-    obj[`set${set}`].variations.none = true;
+    setObj[`set${set}`].variations.none = true;
   }
   for (let i = 0; i < variationInput.length; i += 1) {
     if (variationInput.length < 1) console.log("none");
-    obj[`set${set}`].variations[variationInput[i]] = true;
+    setObj[`set${set}`].variations[variationInput[i]] = true;
   }
-  return obj;
+
+  movementObj[movement] = setObj;
+  return movementObj;
 }
 
 export function generateMovementObj() {
