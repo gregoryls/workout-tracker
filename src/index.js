@@ -24,6 +24,7 @@ import * as utils from "./utils";
 // merit to simply storing workout data as array of objects, first array item is date?
 // ^^^, build as obj from start, apply user date during final submit
 // set input starts at 1 and increments itself outside user control (can edit later)
+// different listeners for movement and set objects
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -182,7 +183,12 @@ submitExercise.addEventListener("click", () => {
   //   console.log(workoutArray[i]);
   // }
 
-  console.log(utils.generateSetObj(utils.generateMovementObj()));
+  const testObj = utils.generateSetObj(utils.generateMovementObj());
+  const stringify = JSON.stringify(testObj, null, 2);
+  const display = document.getElementById("currentWorkoutDisplay");
+  display.innerHTML = `<pre>${stringify}</pre>`;
+
+  console.log(stringify);
 });
 
 // input.addEventListener("input", () => {
