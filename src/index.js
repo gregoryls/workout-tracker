@@ -183,12 +183,11 @@ submitExercise.addEventListener("click", () => {
   //   console.log(workoutArray[i]);
   // }
 
-  const testObj = utils.generateSetObj(utils.generateMovementObj());
-  const stringify = JSON.stringify(testObj, null, 2);
-  const display = document.getElementById("currentWorkoutDisplay");
-  display.innerHTML = `<pre>${stringify}</pre>`;
-
-  console.log(stringify);
+  // const testObj = utils.generateSetObj(utils.generateMovementObj());
+  // const stringify = JSON.stringify(testObj, null, 2);
+  // const display = document.getElementById("currentWorkoutDisplay");
+  // display.innerHTML = `<pre>${stringify}</pre>`;
+  // console.log(stringify);
 });
 
 // input.addEventListener("input", () => {
