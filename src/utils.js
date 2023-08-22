@@ -96,6 +96,13 @@ export function getVariationInput() {
   return x;
 }
 
+export function incrementSetNumber() {
+  const setNumber = document.getElementById("setNumber");
+  let number = Number(setNumber.textContent);
+  number += 1;
+  setNumber.textContent = number;
+}
+
 export function generateSetObj(obj) {
   const movement = getMovementInput();
   const set = getSetInput();

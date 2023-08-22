@@ -179,6 +179,8 @@ submitExercise.addEventListener("click", () => {
   workoutArray.push(utils.generateMovementObj());
   console.log(workoutArray);
 
+  utils.incrementSetNumber();
+
   // for (let i = 0; i < workoutArray.length; i += 1) {
   //   console.log(workoutArray[i]);
   // }
