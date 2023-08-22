@@ -147,6 +147,7 @@ newVariationButton.addEventListener("click", () => {
 
   exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
   console.log(exerciseListObj[valueCamelCase]);
+  utils.resetSetNumber();
 });
 
 submitExercise.addEventListener("click", () => {
