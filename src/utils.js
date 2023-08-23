@@ -110,6 +110,7 @@ export function resetSetNumber() {
 }
 
 export function generateSetObj(obj) {
+  // does obj need to be defined as it is here
   const movement = getMovementInput();
   const set = getSetNumber();
   const weight = getWeightInput();
