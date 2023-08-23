@@ -50,10 +50,6 @@ export function getMovementInput() {
   return input.value;
 }
 
-export function getSetInput() {
-  const input = document.getElementById("setNumber");
-  return input.value;
-}
 export function getWeightInput() {
   const input = document.getElementById("weight");
   return input.value;
@@ -96,6 +92,12 @@ export function getVariationInput() {
   return x;
 }
 
+export function getSetNumber() {
+  const setCounter = document.getElementById("setNumber");
+  const setNumber = Number(setCounter.textContent);
+  return setNumber;
+}
+
 const setNumber = document.getElementById("setNumber");
 export function incrementSetNumber() {
   let number = Number(setNumber.textContent);
@@ -109,7 +111,7 @@ export function resetSetNumber() {
 
 export function generateSetObj(obj) {
   const movement = getMovementInput();
-  const set = getSetInput();
+  const set = getSetNumber();
   const weight = getWeightInput();
   const reps = getRepsInput();
   const rpe = getRpeInput();

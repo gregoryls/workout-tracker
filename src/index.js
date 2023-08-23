@@ -4,7 +4,6 @@ import * as utils from "./utils";
 
 // TODO
 // big list of exercise full names, e.g. flat barbell bench, incline dumbell bench etc.
-// import this big list from it's own separate file to reduce visual bloat
 // maybe select options to narrow down a populated list of every exercise
 // which is also filterable by a search field.
 // read more on destructuring
@@ -25,6 +24,7 @@ import * as utils from "./utils";
 // ^^^, build as obj from start, apply user date during final submit
 // set input starts at 1 and increments itself outside user control (can edit later)
 // different listeners for movement and set objects
+// work on building workout 1 set at a time
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -147,7 +147,6 @@ newVariationButton.addEventListener("click", () => {
 
   exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
   console.log(exerciseListObj[valueCamelCase]);
-  utils.resetSetNumber();
 });
 
 submitExercise.addEventListener("click", () => {
@@ -177,7 +176,7 @@ submitExercise.addEventListener("click", () => {
   }
   //
 
-  workoutArray.push(utils.generateMovementObj());
+  workoutArray.push(utils.generateSetObj(utils.generateMovementObj()));
   console.log(workoutArray);
 
   utils.incrementSetNumber();
