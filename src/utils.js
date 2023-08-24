@@ -120,23 +120,21 @@ export function generateSetObj(obj) {
 
   const movementObj = obj;
   const setObj = {
-    [`set${set}`]: {
-      variations: {},
-      weight,
-      reps,
-      rpe,
-    },
+    variations: {},
+    weight,
+    reps,
+    rpe,
   };
 
-  if (variationInput.length < 1) {
-    setObj[`set${set}`].variations.none = true;
-  }
-  for (let i = 0; i < variationInput.length; i += 1) {
-    if (variationInput.length < 1) console.log("none");
-    setObj[`set${set}`].variations[variationInput[i]] = true;
-  }
+  // if (variationInput.length < 1) {
+  //   setObj[`set${set}`].variations.none = true;
+  // }
+  // for (let i = 0; i < variationInput.length; i += 1) {
+  //   if (variationInput.length < 1) console.log("none");
+  //   setObj[`set${set}`].variations[variationInput[i]] = true;
+  // }
 
-  movementObj[movement] = setObj;
+  movementObj[movement][`set${set}`] = setObj;
   return movementObj;
 }
 
