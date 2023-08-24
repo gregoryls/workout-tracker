@@ -126,13 +126,13 @@ export function generateSetObj(obj) {
     rpe,
   };
 
-  // if (variationInput.length < 1) {
-  //   setObj[`set${set}`].variations.none = true;
-  // }
-  // for (let i = 0; i < variationInput.length; i += 1) {
-  //   if (variationInput.length < 1) console.log("none");
-  //   setObj[`set${set}`].variations[variationInput[i]] = true;
-  // }
+  if (variationInput.length < 1) {
+    setObj.variations.none = true;
+  }
+  for (let i = 0; i < variationInput.length; i += 1) {
+    if (variationInput.length < 1) console.log("none");
+    setObj.variations[variationInput[i]] = true;
+  }
 
   movementObj[movement][`set${set}`] = setObj;
   return movementObj;
