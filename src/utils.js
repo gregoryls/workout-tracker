@@ -135,6 +135,7 @@ export function generateSetObj(obj) {
   }
 
   movementObj[movement][`set${set}`] = setObj;
+  // return currently not needed
   return movementObj;
 }
 

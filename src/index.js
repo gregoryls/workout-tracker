@@ -53,7 +53,7 @@ const newVariationButton = document.getElementById("submitNewVariation");
 const exerciseListObj = exercises.exerciseList;
 console.log(exerciseListObj);
 
-let test;
+let newMovement;
 
 const workoutArray = [];
 
@@ -150,7 +150,8 @@ newVariationButton.addEventListener("click", () => {
   exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
   console.log(exerciseListObj[valueCamelCase]);
 
-  test = utils.generateMovementObj();
+  newMovement = utils.generateMovementObj();
+  workoutArray.push(newMovement);
 });
 
 submitExercise.addEventListener("click", () => {
@@ -180,7 +181,7 @@ submitExercise.addEventListener("click", () => {
   }
   //
 
-  workoutArray.push(utils.generateSetObj(test));
+  utils.generateSetObj(newMovement);
   console.log(workoutArray);
 
   utils.incrementSetNumber();
