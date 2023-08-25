@@ -14,7 +14,7 @@ import * as utils from "./utils";
 // consider displaying movements as capital first letter vs all lower
 // consider a number hidden from user for ordering movements in a workout
 // new variation js
-// change variation button to somethign like clickable text
+// change variation button to something like clickable text
 // work on new variation logic
 // comments
 // add movements to workout array, display array contents in some collapsible form
@@ -25,6 +25,7 @@ import * as utils from "./utils";
 // set input starts at 1 and increments itself outside user control (can edit later)
 // different listeners for movement and set objects
 // work on building workout 1 set at a time
+// keep set info greyed out until movement added to workout
 
 // const a2022530 = {
 //   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
@@ -48,6 +49,7 @@ const submitExercise = document.getElementById("submitExercise");
 // const option = document.createElement("option");
 const variations = document.getElementById("variationInputs");
 const newVariationButton = document.getElementById("submitNewVariation");
+const newMovementButton = document.getElementById("newMovementButton");
 
 // console.log(list);
 const exerciseListObj = exercises.exerciseList;
@@ -143,15 +145,17 @@ exerciseInput.addEventListener("input", () => {
   }
 });
 
+newMovementButton.addEventListener("click", () => {
+  newMovement = utils.generateMovementObj();
+  workoutArray.push(newMovement);
+});
+
 newVariationButton.addEventListener("click", () => {
   const newVariationInput = document.getElementById("newVariationInput");
   const newVariationValue = newVariationInput.value;
 
   exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
   console.log(exerciseListObj[valueCamelCase]);
-
-  newMovement = utils.generateMovementObj();
-  workoutArray.push(newMovement);
 });
 
 submitExercise.addEventListener("click", () => {
