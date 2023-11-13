@@ -38,13 +38,60 @@ export const exerciseList = {
       pause: true,
       tempo: {
         concentric: 1,
-        eccentric: 2,
+        eccentric: 3,
       },
     },
   },
   benchPress: {
     variation: {
       none: true,
+      pause: false,
+      tempo:{
+        concentric: 1,
+        eccentric: 3,
+      }
+    },
+  },
+  inclineBenchPress: {
+    variation: {
+      none: true,
+      pause: false,
+      tempo:{
+        concentric: 1,
+        eccentric: 3,
+      }
+    },
+  },
+  overheadPress: {
+    variation: {
+      none: true,
+      pause: false,
+      tempo:{
+        concentric: 1,
+        eccentric: 3,
+      }
+    },
+  },
+  deadlift: {
+    variation: {
+      none: true,
+      pause: false,
+      tempo:{
+        concentric: 1,
+        eccentric: 3,
+      }
+    },
+  },
+  pullup: {
+    variation: {
+      chinup: false,
+      neutral: false,
+      none: true,
+      pause: false,
+      tempo:{
+        concentric: 1,
+        eccentric: 3,
+      }
     },
   },
 };
