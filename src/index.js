@@ -27,19 +27,7 @@ import * as utils from "./utils";
 // work on building workout 1 set at a time
 // keep set info greyed out until movement added to workout
 
-// const a2022530 = {
-//   squat: { weight: "215", reps: ["5", "5", "5", "5", "5"] },
-//   ohp: { weight: "55", reps: ["16", "16", "16", "16", "16"] },
-// };
 
-// const movement = document.getElementById("movement");
-// movement.addEventListener("change", testFunction);
-
-// function testFunction() {
-//   if (movement.value === "squat") {
-//     document.getElementById("squatOptions").style.visibility = "visible";
-//   }
-// }
 
 console.log(exercises.sampleWorkout());
 
@@ -159,14 +147,11 @@ newVariationButton.addEventListener("click", () => {
 });
 
 submitExercise.addEventListener("click", () => {
-  // const value = utils.getMovementInput();
-  // console.log(utils.getInputValue("rpe"));
+ 
 
   // don't add empty entry to exercise list object
   if (value === "") return;
 
-  // const exerciseOptions = exerciseListElement.options;
-  // const valueCamelCase = utils.toCamelCase(value.toLowerCase());
 
   const keys = Object.keys(exerciseListObj);
   // console.log(keys);
@@ -190,25 +175,10 @@ submitExercise.addEventListener("click", () => {
 
   utils.incrementSetNumber();
 
-  // for (let i = 0; i < workoutArray.length; i += 1) {
-  //   console.log(workoutArray[i]);
-  // }
-
-  // const testObj = utils.generateSetObj(utils.generateMovementObj());
-  // const stringify = JSON.stringify(testObj, null, 2);
-  // const display = document.getElementById("currentWorkoutDisplay");
-  // display.innerHTML = `<pre>${stringify}</pre>`;
-  // console.log(stringify);
+  
 });
 
-// input.addEventListener("input", () => {
-//   const { value } = this;
 
-//   const newExercise = document.createElement("option");
-//   newExercise.value = value;
-//   exerciseListElement.append(newExercise);
-//   this.value = value;
-// });
 
 const workoutData = {};
 workoutData.day = {
@@ -233,4 +203,4 @@ workoutData.day = {
     },
   },
 };
-// console.log(Object.keys(workoutData.day.exercises.excercise1)[0]);
+
