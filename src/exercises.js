@@ -34,7 +34,7 @@ export function sampleWorkout() {
 export const exerciseList = {
   squat: {
     variation: {
-      none: false,
+      none: true,
       pause: true,
       tempo: {
         concentric: 1,
@@ -45,7 +45,7 @@ export const exerciseList = {
   benchPress: {
     variation: {
       none: true,
-      pause: false,
+      pause: true,
       tempo:{
         concentric: 1,
         eccentric: 3,
@@ -55,7 +55,7 @@ export const exerciseList = {
   inclineBenchPress: {
     variation: {
       none: true,
-      pause: false,
+      pause: true,
       tempo:{
         concentric: 1,
         eccentric: 3,
@@ -65,7 +65,7 @@ export const exerciseList = {
   overheadPress: {
     variation: {
       none: true,
-      pause: false,
+      pause: true,
       tempo:{
         concentric: 1,
         eccentric: 3,
@@ -75,7 +75,7 @@ export const exerciseList = {
   deadlift: {
     variation: {
       none: true,
-      pause: false,
+      pause: true,
       tempo:{
         concentric: 1,
         eccentric: 3,
@@ -84,10 +84,10 @@ export const exerciseList = {
   },
   pullup: {
     variation: {
-      chinup: false,
-      neutral: false,
+      chinup: true,
+      neutral: true,
       none: true,
-      pause: false,
+      pause: true,
       tempo:{
         concentric: 1,
         eccentric: 3,
