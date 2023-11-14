@@ -26,6 +26,7 @@ import * as utils from "./utils";
 // different listeners for movement and set objects
 // work on building workout 1 set at a time
 // keep set info greyed out until movement added to workout
+// why does movement name come out with a space
 
 
 
@@ -172,6 +173,7 @@ submitExercise.addEventListener("click", () => {
 
   utils.generateSetObj(newMovement);
   console.log(workoutArray);
+  console.log(utils.displayObject(workoutArray[0]));
 
   utils.incrementSetNumber();
 

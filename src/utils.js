@@ -161,4 +161,14 @@ export function generateWorkoutObj(movements) {
   return obj;
 }
 
+export function displayObject(obj){
+  const display = document.getElementById('currentWorkoutDisplay');
+  const movement = Object.keys(obj);
+
+  const p = document.createElement('p');
+  // Object.keys() returns an array
+  p.textContent = movement[0]
+  display.append(p);
+}
+
 export function displayWorkoutInProgress(workout) {}
