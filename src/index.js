@@ -61,6 +61,11 @@ if (exerciseListObj[valueCamelCase]) {
     if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
       const temp = utils.createInput("checkbox", keys[i], "VariationCheck");
       variations.append(temp);
+
+      // pre-check the 'none variation after it's div is appended
+      if (keys[i]=== 'none') document.getElementById('none').checked = true;
+
+      // expand the tempo checkbox if selected for eccentric/concentric inputs
       if (keys[i] === "tempo") {
         temp.addEventListener("change", (event) => {
           if (event.target.checked) {
