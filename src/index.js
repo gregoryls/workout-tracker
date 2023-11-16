@@ -106,6 +106,10 @@ exerciseInput.addEventListener("input", () => {
       if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
         const temp = utils.createInput("checkbox", keys[i], "VariationCheck");
         variations.append(temp);
+        
+        // pre-check the 'none variation after it's div is appended
+        if (keys[i]=== 'none') document.getElementById('none').checked = true;
+
         if (keys[i] === "tempo") {
           temp.addEventListener("change", (event) => {
             if (event.target.checked) {
