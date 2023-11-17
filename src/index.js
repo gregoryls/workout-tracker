@@ -39,7 +39,8 @@ const submitExercise = document.getElementById("submitExercise");
 const variations = document.getElementById("variationInputs");
 const newVariationButton = document.getElementById("submitNewVariation");
 const newMovementButton = document.getElementById("newMovementButton");
-const userDate = document.getElementById('dateInput');
+// const userDate = document.getElementById('dateInput');
+const dateButton = document.getElementById('dateButton')
 
 // console.log(list);
 const exerciseListObj = exercises.exerciseList;
@@ -48,6 +49,12 @@ console.log(exerciseListObj);
 let newMovement;
 
 const workoutArray = [];
+
+dateButton.addEventListener('click',()=>{
+  // put user date input into workout array
+  // console.log(utils.getDateTime());
+  workoutArray.push(utils.getDateTime())
+})
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
