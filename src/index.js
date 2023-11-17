@@ -39,6 +39,7 @@ const submitExercise = document.getElementById("submitExercise");
 const variations = document.getElementById("variationInputs");
 const newVariationButton = document.getElementById("submitNewVariation");
 const newMovementButton = document.getElementById("newMovementButton");
+const userDate = document.getElementById('dateInput');
 
 // console.log(list);
 const exerciseListObj = exercises.exerciseList;
