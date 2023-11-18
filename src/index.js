@@ -28,8 +28,6 @@ import * as utils from "./utils";
 // keep set info greyed out until movement added to workout
 // why does movement name come out with a space
 
-
-
 console.log(exercises.sampleWorkout());
 
 const exerciseInput = document.getElementById("exerciseInput");
@@ -40,7 +38,7 @@ const variations = document.getElementById("variationInputs");
 const newVariationButton = document.getElementById("submitNewVariation");
 const newMovementButton = document.getElementById("newMovementButton");
 // const userDate = document.getElementById('dateInput');
-const dateButton = document.getElementById('dateButton')
+const dateButton = document.getElementById("dateButton");
 
 // console.log(list);
 const exerciseListObj = exercises.exerciseList;
@@ -49,12 +47,14 @@ console.log(exerciseListObj);
 let newMovement;
 
 const workoutArray = [];
+const workoutObj = {};
 
-dateButton.addEventListener('click',()=>{
+dateButton.addEventListener("click", () => {
   // put user date input into workout array
   // console.log(utils.getDateTime());
-  workoutArray.push(utils.getDateTime())
-})
+  workoutObj.date = utils.getDateTime();
+  console.log(workoutObj);
+});
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
@@ -71,7 +71,7 @@ if (exerciseListObj[valueCamelCase]) {
       variations.append(temp);
 
       // pre-check the 'none variation after it's div is appended
-      if (keys[i]=== 'none') document.getElementById('none').checked = true;
+      if (keys[i] === "none") document.getElementById("none").checked = true;
 
       // expand the tempo checkbox if selected for eccentric/concentric inputs
       if (keys[i] === "tempo") {
@@ -114,9 +114,9 @@ exerciseInput.addEventListener("input", () => {
       if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
         const temp = utils.createInput("checkbox", keys[i], "VariationCheck");
         variations.append(temp);
-        
+
         // pre-check the 'none variation after it's div is appended
-        if (keys[i]=== 'none') document.getElementById('none').checked = true;
+        if (keys[i] === "none") document.getElementById("none").checked = true;
 
         if (keys[i] === "tempo") {
           temp.addEventListener("change", (event) => {
@@ -165,11 +165,8 @@ newVariationButton.addEventListener("click", () => {
 });
 
 submitExercise.addEventListener("click", () => {
- 
-
   // don't add empty entry to exercise list object
   if (value === "") return;
-
 
   const keys = Object.keys(exerciseListObj);
   // console.log(keys);
@@ -193,11 +190,7 @@ submitExercise.addEventListener("click", () => {
   console.log(utils.displayObject(workoutArray[0]));
 
   utils.incrementSetNumber();
-
-  
 });
-
-
 
 const workoutData = {};
 workoutData.day = {
@@ -222,4 +215,3 @@ workoutData.day = {
     },
   },
 };
-
