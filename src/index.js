@@ -27,6 +27,7 @@ import * as utils from "./utils";
 // work on building workout 1 set at a time
 // keep set info greyed out until movement added to workout
 // why does movement name come out with a space
+// sanitize getmovementinput
 
 console.log(exercises.sampleWorkout());
 
@@ -153,7 +154,13 @@ exerciseInput.addEventListener("input", () => {
 
 newMovementButton.addEventListener("click", () => {
   newMovement = utils.generateMovementObj();
+  console.log(newMovement);
   workoutArray.push(newMovement);
+
+  workoutObj.movements = workoutArray;
+
+  // workoutObj[utils.getMovementInput()] = newMovement;
+  console.log(workoutObj);
 });
 
 newVariationButton.addEventListener("click", () => {
