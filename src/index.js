@@ -28,6 +28,7 @@ import * as utils from "./utils";
 // keep set info greyed out until movement added to workout
 // why does movement name come out with a space
 // sanitize getmovementinput
+// rethink how workout objects are built
 
 console.log(exercises.sampleWorkout());
 
