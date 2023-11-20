@@ -30,7 +30,7 @@ import * as utils from "./utils";
 // sanitize getmovementinput
 // rethink how workout objects are built
 
-console.log(exercises.sampleWorkout());
+// console.log(exercises.sampleWorkout());
 
 const exerciseInput = document.getElementById("exerciseInput");
 // const exerciseListElement = document.getElementById("exerciseList");
@@ -44,7 +44,7 @@ const dateButton = document.getElementById("dateButton");
 
 // console.log(list);
 const exerciseListObj = exercises.exerciseList;
-console.log(exerciseListObj);
+// console.log(exerciseListObj);
 
 let newMovement;
 
@@ -54,8 +54,10 @@ const workoutObj = {};
 dateButton.addEventListener("click", () => {
   // put user date input into workout array
   // console.log(utils.getDateTime());
-  workoutObj.date = utils.getDateTime();
-  console.log(workoutObj);
+  if (workoutObj.date === null) {
+    workoutObj.date = utils.getDateTime();
+    console.log(workoutObj);
+  }
 });
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
