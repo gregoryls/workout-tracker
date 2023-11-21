@@ -29,6 +29,7 @@ import * as utils from "./utils";
 // why does movement name come out with a space
 // sanitize getmovementinput
 // rethink how workout objects are built
+// functions to get time inputs
 
 // console.log(exercises.sampleWorkout());
 
@@ -156,50 +157,43 @@ exerciseInput.addEventListener("input", () => {
 });
 
 newMovementButton.addEventListener("click", () => {
-  newMovement = utils.generateMovementObj();
-  console.log(newMovement);
-  workoutArray.push(newMovement);
-
-  workoutObj.movements = workoutArray;
-
-  // workoutObj[utils.getMovementInput()] = newMovement;
-  console.log(workoutObj);
+  // newMovement = utils.generateMovementObj();
+  // console.log(newMovement);
+  // workoutArray.push(newMovement);
+  // workoutObj.movements = workoutArray;
+  // // workoutObj[utils.getMovementInput()] = newMovement;
+  // console.log(workoutObj);
 });
 
 newVariationButton.addEventListener("click", () => {
-  const newVariationInput = document.getElementById("newVariationInput");
-  const newVariationValue = newVariationInput.value;
-
-  exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
-  console.log(exerciseListObj[valueCamelCase]);
+  // const newVariationInput = document.getElementById("newVariationInput");
+  // const newVariationValue = newVariationInput.value;
+  // exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
+  // console.log(exerciseListObj[valueCamelCase]);
 });
 
 submitExercise.addEventListener("click", () => {
-  // don't add empty entry to exercise list object
-  if (value === "") return;
-
-  const keys = Object.keys(exerciseListObj);
-  // console.log(keys);
-
-  // checks current list of movements; adds unique movements to exercise list
-  let isContained = false;
-  for (let i = 0; i < keys.length; i += 1) {
-    const movement = exerciseListObj[valueCamelCase];
-    if (movement) {
-      isContained = true;
-    }
-  }
-  if (!isContained) {
-    exerciseListObj[valueCamelCase] = { variation: { none: true } };
-    console.log(exerciseListObj);
-  }
-  //
-
-  utils.generateSetObj(newMovement);
-  console.log(workoutArray);
-  console.log(utils.displayObject(workoutArray[0]));
-
-  utils.incrementSetNumber();
+  // // don't add empty entry to exercise list object
+  // if (value === "") return;
+  // const keys = Object.keys(exerciseListObj);
+  // // console.log(keys);
+  // // checks current list of movements; adds unique movements to exercise list
+  // let isContained = false;
+  // for (let i = 0; i < keys.length; i += 1) {
+  //   const movement = exerciseListObj[valueCamelCase];
+  //   if (movement) {
+  //     isContained = true;
+  //   }
+  // }
+  // if (!isContained) {
+  //   exerciseListObj[valueCamelCase] = { variation: { none: true } };
+  //   console.log(exerciseListObj);
+  // }
+  // //
+  // utils.generateSetObj(newMovement);
+  // console.log(workoutArray);
+  // console.log(utils.displayObject(workoutArray[0]));
+  // utils.incrementSetNumber();
 });
 
 const workoutData = {};
