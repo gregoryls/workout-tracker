@@ -54,9 +54,9 @@ const workoutObj = {};
 
 dateButton.addEventListener("click", () => {
   // put user date input into workout array
-  // console.log(utils.getDateTime());
+  // console.log(utils.getDate());
   if (workoutObj.date === null) {
-    workoutObj.date = utils.getDateTime();
+    workoutObj.date = utils.getDate();
     console.log(workoutObj);
   }
 });

@@ -71,7 +71,7 @@ export function getTempoValues() {
   const concentric = document.getElementById("concentric");
   return [eccentric.value, concentric.value];
 }
-export function getDateTime() {
+export function getDate() {
   const datetime = document.getElementById("dateInput");
   return datetime.valueAsDate;
 }
