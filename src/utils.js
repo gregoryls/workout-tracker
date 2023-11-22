@@ -80,6 +80,11 @@ export function getStartTime() {
   return startTime.value;
 }
 
+export function getEndTime() {
+  const endTime = document.getElementById("endTime");
+  return endTime.value;
+}
+
 export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");
   const variations = variationInputs.childNodes;
