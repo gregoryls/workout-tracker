@@ -75,6 +75,10 @@ export function getDate() {
   const datetime = document.getElementById("dateInput");
   return datetime.valueAsDate;
 }
+export function getStartTime() {
+  const startTime = document.getElementById("startTime");
+  return startTime.value;
+}
 
 export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");

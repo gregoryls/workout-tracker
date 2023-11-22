@@ -163,6 +163,7 @@ newMovementButton.addEventListener("click", () => {
   // workoutObj.movements = workoutArray;
   // // workoutObj[utils.getMovementInput()] = newMovement;
   // console.log(workoutObj);
+  console.log(utils.getStartTime());
 });
 
 newVariationButton.addEventListener("click", () => {
