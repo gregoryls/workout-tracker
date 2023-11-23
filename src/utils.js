@@ -73,7 +73,7 @@ export function getTempoValues() {
 }
 export function getDate() {
   const datetime = document.getElementById("dateInput");
-  return datetime.valueAsDate;
+  return datetime.value;
 }
 export function getStartTime() {
   const startTime = document.getElementById("startTime");
