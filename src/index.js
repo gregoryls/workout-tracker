@@ -50,6 +50,7 @@ const exerciseListObj = exercises.exerciseList;
 let newMovement;
 
 const workoutArray = [];
+const workoutHistoryObj = {};
 const workoutObj = {};
 
 dateButton.addEventListener("click", () => {
@@ -157,13 +158,19 @@ exerciseInput.addEventListener("input", () => {
 });
 
 newMovementButton.addEventListener("click", () => {
-  // newMovement = utils.generateMovementObj();
-  // console.log(newMovement);
+  console.log(utils.getDate() + utils.getStartTime());
+
+  // if (workoutObj.date === null) {
+  //   workoutObj.date = utils.getDate();
+  //   console.log(workoutObj);
+  // }
+
+  newMovement = utils.generateMovementObj();
+  console.log(newMovement);
   // workoutArray.push(newMovement);
   // workoutObj.movements = workoutArray;
   // // workoutObj[utils.getMovementInput()] = newMovement;
   // console.log(workoutObj);
-  console.log(utils.getStartTime());
 });
 
 newVariationButton.addEventListener("click", () => {
