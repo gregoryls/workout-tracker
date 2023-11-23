@@ -158,7 +158,14 @@ exerciseInput.addEventListener("input", () => {
 });
 
 newMovementButton.addEventListener("click", () => {
-  console.log(utils.getDate() + utils.getStartTime());
+  console.log(workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`]);
+  if (
+    workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`] ===
+    undefined
+  ) {
+    workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`] = {};
+    console.log(workoutHistoryObj);
+  }
 
   // if (workoutObj.date === null) {
   //   workoutObj.date = utils.getDate();
