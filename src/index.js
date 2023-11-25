@@ -157,8 +157,7 @@ exerciseInput.addEventListener("input", () => {
   }
 });
 
-newMovementButton.addEventListener("click", () => {
-  console.log(workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`]);
+function setWorkoutDate() {
   if (
     workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`] ===
     undefined
@@ -166,6 +165,11 @@ newMovementButton.addEventListener("click", () => {
     workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`] = {};
     console.log(workoutHistoryObj);
   }
+}
+
+newMovementButton.addEventListener("click", () => {
+  // console.log(workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`]);
+  setWorkoutDate();
 
   // if (workoutObj.date === null) {
   //   workoutObj.date = utils.getDate();
