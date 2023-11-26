@@ -98,7 +98,7 @@ export function getVariationInput() {
       // console.log(x);
     }
   });
-  return x;
+  return variationArray;
 }
 
 export function getSetNumber() {
