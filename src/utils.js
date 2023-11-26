@@ -89,12 +89,12 @@ export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");
   const variations = variationInputs.childNodes;
   // rename x
-  const x = [];
+  const variationArray = [];
 
   variations.forEach((variant) => {
     if (variant.children[1].checked) {
       // console.log(variant.children[1].value);
-      x.push(variant.children[1].value);
+      variationArray.push(variant.children[1].value);
       // console.log(x);
     }
   });
