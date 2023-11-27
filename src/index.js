@@ -168,8 +168,12 @@ function setWorkoutDate() {
 }
 
 newMovementButton.addEventListener("click", () => {
-  // console.log(workoutHistoryObj[`${utils.getDate()}|${utils.getStartTime()}`]);
+  const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
   setWorkoutDate();
+  workoutHistoryObj[dateStartTime].time = {};
+  workoutHistoryObj[dateStartTime].time.start = utils.getStartTime();
+  workoutHistoryObj[dateStartTime].time.end = utils.getEndTime();
+  console.log(workoutHistoryObj);
 
   // if (workoutObj.date === null) {
   //   workoutObj.date = utils.getDate();
