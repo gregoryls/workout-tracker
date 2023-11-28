@@ -51,6 +51,7 @@ let newMovement;
 
 const workoutArray = [];
 const workoutHistoryObj = {};
+const movementObj = {};
 const workoutObj = {};
 
 dateButton.addEventListener("click", () => {
