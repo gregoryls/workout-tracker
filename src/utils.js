@@ -101,6 +101,14 @@ export function getVariationInput() {
   return variationArray;
 }
 
+export function setWorkoutDate(obj) {
+  const workoutHistoryObj = obj;
+  if (workoutHistoryObj[`${getDate()}|${getStartTime()}`] === undefined) {
+    workoutHistoryObj[`${getDate()}|${getStartTime()}`] = {};
+    console.log(workoutHistoryObj);
+  }
+}
+
 export function getSetNumber() {
   const setCounter = document.getElementById("setNumber");
   const setNumber = Number(setCounter.textContent);
