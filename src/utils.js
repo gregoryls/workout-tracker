@@ -147,13 +147,14 @@ export function generateSetObj(obj) {
     setObj.variations.none = true;
   }
   for (let i = 0; i < variationInput.length; i += 1) {
+    // TODO check this if, doesn't look needed
     if (variationInput.length < 1) console.log("none");
     setObj.variations[variationInput[i]] = true;
   }
 
   movementObj[movement][`set${set}`] = setObj;
   // return currently not needed
-  return movementObj;
+  // return movementObj;
 }
 
 export function generateMovementObj() {
