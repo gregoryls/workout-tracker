@@ -61,7 +61,6 @@ dateButton.addEventListener("click", () => {
   //   workoutObj.date = utils.getDate();
   //   console.log(workoutObj);
   // }
-
   const temp = utils.generateMovementObj();
   utils.generateSetObj(temp);
   console.log(temp);

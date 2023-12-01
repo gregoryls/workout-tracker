@@ -54,6 +54,12 @@ export function getWeightInput() {
   const input = document.getElementById("weight");
   return input.value;
 }
+export function getWeightUnit() {
+  const checkedRadio = document.querySelector(
+    'input[name="poundKilo"]:checked',
+  );
+  return checkedRadio.value;
+}
 export function getRepsInput() {
   const input = document.getElementById("reps");
   return input.value;
