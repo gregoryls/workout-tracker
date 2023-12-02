@@ -137,6 +137,7 @@ export function generateSetObj(obj) {
   const movement = getMovementInput();
   const set = getSetNumber();
   const weight = getWeightInput();
+  const weightUnit = getWeightUnit();
   const reps = getRepsInput();
   const rpe = getRpeInput();
   const variationInput = getVariationInput();
@@ -145,6 +146,7 @@ export function generateSetObj(obj) {
   const setObj = {
     variations: {},
     weight,
+    weightUnit,
     reps,
     rpe,
   };
