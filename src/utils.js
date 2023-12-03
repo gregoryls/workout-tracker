@@ -111,7 +111,7 @@ export function setWorkoutDate(obj) {
   const workoutHistoryObj = obj;
   if (workoutHistoryObj[`${getDate()}|${getStartTime()}`] === undefined) {
     workoutHistoryObj[`${getDate()}|${getStartTime()}`] = {};
-    console.log(workoutHistoryObj);
+    // console.log(workoutHistoryObj);
   }
 }
 

@@ -162,6 +162,7 @@ exerciseInput.addEventListener("input", () => {
 });
 
 newMovementButton.addEventListener("click", () => {
+  // TODO dateblock only needs to run once, check for content first
   const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
   utils.setWorkoutDate(workoutHistoryObj);
   workoutHistoryObj[dateStartTime].time = {
@@ -170,13 +171,14 @@ newMovementButton.addEventListener("click", () => {
   };
   console.log(workoutHistoryObj);
 
-  // if (workoutObj.date === null) {
-  //   workoutObj.date = utils.getDate();
-  //   console.log(workoutObj);
-  // }
-
   newMovement = utils.generateMovementObj();
   console.log(newMovement);
+
+  utils.generateSetObj(newMovement);
+  console.log(newMovement);
+  Object.assign(workoutHistoryObj[dateStartTime], newMovement);
+  console.log(workoutHistoryObj);
+
   // workoutArray.push(newMovement);
   // workoutObj.movements = workoutArray;
   // // workoutObj[utils.getMovementInput()] = newMovement;
