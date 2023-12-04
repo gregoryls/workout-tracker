@@ -164,7 +164,7 @@ exerciseInput.addEventListener("input", () => {
 newMovementButton.addEventListener("click", () => {
   // TODO dateblock only needs to run once, check for content first
   const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
-  utils.setWorkoutDate(workoutHistoryObj);
+  utils.setWorkoutDateStart(workoutHistoryObj);
 
   utils.setWorkoutTime(workoutHistoryObj[dateStartTime]);
   console.log(workoutHistoryObj);

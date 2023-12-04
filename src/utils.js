@@ -107,7 +107,7 @@ export function getVariationInput() {
   return variationArray;
 }
 
-export function setWorkoutDate(obj) {
+export function setWorkoutDateStart(obj) {
   const workoutHistoryObj = obj;
   if (workoutHistoryObj[`${getDate()}|${getStartTime()}`] === undefined) {
     workoutHistoryObj[`${getDate()}|${getStartTime()}`] = {};
