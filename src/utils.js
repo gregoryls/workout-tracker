@@ -115,6 +115,14 @@ export function setWorkoutDate(obj) {
   }
 }
 
+export function setWorkoutTime(obj) {
+  const workoutHistoryObj = obj;
+  workoutHistoryObj.time = {
+    start: getStartTime(),
+    end: getEndTime(),
+  };
+}
+
 export function getSetNumber() {
   const setCounter = document.getElementById("setNumber");
   const setNumber = Number(setCounter.textContent);

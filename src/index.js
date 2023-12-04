@@ -165,10 +165,8 @@ newMovementButton.addEventListener("click", () => {
   // TODO dateblock only needs to run once, check for content first
   const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
   utils.setWorkoutDate(workoutHistoryObj);
-  workoutHistoryObj[dateStartTime].time = {
-    start: utils.getStartTime(),
-    end: utils.getEndTime(),
-  };
+
+  utils.setWorkoutTime(workoutHistoryObj[dateStartTime]);
   console.log(workoutHistoryObj);
 
   newMovement = utils.generateMovementObj();
