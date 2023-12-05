@@ -177,6 +177,8 @@ newMovementButton.addEventListener("click", () => {
   Object.assign(workoutHistoryObj[dateStartTime], newMovement);
   console.log(workoutHistoryObj);
 
+  utils.incrementSetNumber();
+
   // workoutArray.push(newMovement);
   // workoutObj.movements = workoutArray;
   // // workoutObj[utils.getMovementInput()] = newMovement;
