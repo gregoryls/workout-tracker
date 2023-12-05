@@ -8,6 +8,14 @@ export function removeCamelCase(string) {
   return string.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
 }
 
+export function setDateInputToday() {
+  const dateInput = document.getElementById("dateInput");
+
+  // Split at 'T' to remove time info after calendar date;
+  const today = new Date().toISOString().split("T")[0];
+  dateInput.value = today;
+}
+
 function setAttributes(element, attribtues) {
   Object.keys(attribtues).forEach((key) =>
     element.setAttribute(key, attribtues[key]),

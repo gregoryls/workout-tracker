@@ -54,6 +54,8 @@ const workoutHistoryObj = {};
 const movementObj = {};
 const workoutObj = {};
 
+utils.setDateInputToday();
+
 dateButton.addEventListener("click", () => {
   // put user date input into workout array
   // console.log(utils.getDate());
