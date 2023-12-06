@@ -164,24 +164,30 @@ exerciseInput.addEventListener("input", () => {
 });
 
 newMovementButton.addEventListener("click", () => {
+  let firstSet = true;
   // run this if block for the first set only
-  if (document.getElementById("setNumber").textContent === "1") {
+  if (firstSet) {
     // TODO dateblock only needs to run once, check for content first
     const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
     utils.setWorkoutDateStart(workoutHistoryObj);
 
     utils.setWorkoutTime(workoutHistoryObj[dateStartTime]);
-    console.log(workoutHistoryObj);
+    // console.log(workoutHistoryObj);
 
     newMovement = utils.generateMovementObj();
-    console.log(newMovement);
+    // console.log(newMovement);
 
     utils.generateSetObj(newMovement);
-    console.log(newMovement);
+    // console.log(newMovement);
     Object.assign(workoutHistoryObj[dateStartTime], newMovement);
     console.log(workoutHistoryObj);
 
     utils.incrementSetNumber();
+    firstSet = false;
+  }
+  if (Number(document.getElementById("setNumber").textContent) > 1) {
+    utils.generateSetObj(newMovement);
+    console.log(newMovement);
   }
 
   // workoutArray.push(newMovement);
