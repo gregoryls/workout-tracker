@@ -31,6 +31,7 @@ import * as utils from "./utils";
 // rethink how workout objects are built
 // functions to get time inputs
 // revisit Object.assign() for repeat sets
+// find way to track order of exercises
 
 // console.log(exercises.sampleWorkout());
 
@@ -201,6 +202,9 @@ newMovementButton.addEventListener("click", () => {
 newVariationButton.addEventListener("click", () => {
   const newVariationInput = document.getElementById("newVariationInput");
   const newVariationValue = newVariationInput.value;
+
+  // break if no value is entered in the input
+  if (newVariationValue === "") return;
   exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
   console.log(exerciseListObj[valueCamelCase]);
 });
