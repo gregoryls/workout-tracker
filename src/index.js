@@ -30,6 +30,7 @@ import * as utils from "./utils";
 // sanitize getmovementinput
 // rethink how workout objects are built
 // functions to get time inputs
+// revisit Object.assign() for repeat sets
 
 // console.log(exercises.sampleWorkout());
 
@@ -198,10 +199,10 @@ newMovementButton.addEventListener("click", () => {
 });
 
 newVariationButton.addEventListener("click", () => {
-  // const newVariationInput = document.getElementById("newVariationInput");
-  // const newVariationValue = newVariationInput.value;
-  // exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
-  // console.log(exerciseListObj[valueCamelCase]);
+  const newVariationInput = document.getElementById("newVariationInput");
+  const newVariationValue = newVariationInput.value;
+  exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
+  console.log(exerciseListObj[valueCamelCase]);
 });
 
 submitExercise.addEventListener("click", () => {
