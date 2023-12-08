@@ -52,7 +52,11 @@ const exerciseListObj = exercises.exerciseList;
 let newMovement;
 
 const workoutArray = [];
-const workoutHistoryObj = {};
+
+// retrieve saved object or initialize a blank object
+const workoutHistoryObj =
+  JSON.parse(localStorage.getItem("workoutHistoryObj")) || {};
+console.log(workoutHistoryObj);
 const movementObj = {};
 const workoutObj = {};
 
@@ -196,7 +200,7 @@ newMovementButton.addEventListener("click", () => {
   // workoutArray.push(newMovement);
   // workoutObj.movements = workoutArray;
   // // workoutObj[utils.getMovementInput()] = newMovement;
-  // console.log(workoutObj);
+  localStorage.setItem("workoutHistoryObj", JSON.stringify(workoutHistoryObj));
 });
 
 newVariationButton.addEventListener("click", () => {
