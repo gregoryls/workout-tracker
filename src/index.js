@@ -32,6 +32,7 @@ import * as utils from "./utils";
 // functions to get time inputs
 // revisit Object.assign() for repeat sets
 // find way to track order of exercises
+// fix blank movement field
 
 // console.log(exercises.sampleWorkout());
 
@@ -235,6 +236,11 @@ submitExercise.addEventListener("click", () => {
   // console.log(workoutArray);
   // console.log(utils.displayObject(workoutArray[0]));
   // utils.incrementSetNumber();
+});
+
+const clear = document.getElementById("clear");
+clear.addEventListener("click", () => {
+  localStorage.clear();
 });
 
 const workoutData = {};
