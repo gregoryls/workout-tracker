@@ -47,17 +47,20 @@ const newMovementButton = document.getElementById("newMovementButton");
 const dateButton = document.getElementById("dateButton");
 
 // console.log(list);
-const exerciseListObj = exercises.exerciseList;
+
 // console.log(exerciseListObj);
 
 let newMovement;
 
 const workoutArray = [];
 
+const exerciseListObj =
+  JSON.parse(localStorage.getItem("exerciseListObj")) || exercises.exerciseList;
 // retrieve saved object or initialize a blank object
 const workoutHistoryObj =
   JSON.parse(localStorage.getItem("workoutHistoryObj")) || {};
 console.log(workoutHistoryObj);
+console.log(exerciseListObj);
 const movementObj = {};
 const workoutObj = {};
 
@@ -212,6 +215,7 @@ newVariationButton.addEventListener("click", () => {
   if (newVariationValue === "") return;
   exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
   console.log(exerciseListObj[valueCamelCase]);
+  localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
 });
 
 submitExercise.addEventListener("click", () => {
