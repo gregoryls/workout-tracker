@@ -33,6 +33,7 @@ import * as utils from "./utils";
 // revisit Object.assign() for repeat sets
 // find way to track order of exercises
 // fix blank movement field
+// local storage for new unique movement
 
 // console.log(exercises.sampleWorkout());
 
@@ -89,15 +90,19 @@ if (exerciseListObj[valueCamelCase]) {
   const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
   for (let i = 0; i < keys.length; i += 1) {
     if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
-      const temp = utils.createInput("checkbox", keys[i], "VariationCheck");
-      variations.append(temp);
+      const createCheckboxInput = utils.createInput(
+        "checkbox",
+        keys[i],
+        "VariationCheck",
+      );
+      variations.append(createCheckboxInput);
 
       // pre-check the 'none variation after it's div is appended
       if (keys[i] === "none") document.getElementById("none").checked = true;
 
       // expand the tempo checkbox if selected for eccentric/concentric inputs
       if (keys[i] === "tempo") {
-        temp.addEventListener("change", (event) => {
+        createCheckboxInput.addEventListener("change", (event) => {
           if (event.target.checked) {
             const tempoWrap = document.createElement("div");
             tempoWrap.id = "tempoVariationWrap";
@@ -134,14 +139,18 @@ exerciseInput.addEventListener("input", () => {
     const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
       if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
-        const temp = utils.createInput("checkbox", keys[i], "VariationCheck");
-        variations.append(temp);
+        const createCheckboxInput = utils.createInput(
+          "checkbox",
+          keys[i],
+          "VariationCheck",
+        );
+        variations.append(createCheckboxInput);
 
         // pre-check the 'none variation after it's div is appended
         if (keys[i] === "none") document.getElementById("none").checked = true;
 
         if (keys[i] === "tempo") {
-          temp.addEventListener("change", (event) => {
+          createCheckboxInput.addEventListener("change", (event) => {
             if (event.target.checked) {
               const tempoWrap = document.createElement("div");
               tempoWrap.id = "tempoVariationWrap";
