@@ -46,6 +46,7 @@ const newVariationButton = document.getElementById("submitNewVariation");
 const newMovementButton = document.getElementById("newMovementButton");
 // const userDate = document.getElementById('dateInput');
 const dateButton = document.getElementById("dateButton");
+const addMovement = document.getElementById("addMovement");
 
 // console.log(list);
 
@@ -85,6 +86,7 @@ let value = utils.getMovementInput();
 let valueCamelCase = utils.toCamelCase(value.toLowerCase());
 // console.log(valueCamelCase);
 if (exerciseListObj[valueCamelCase]) {
+  addMovement.style.display = "none";
   variations.innerHTML = "";
   console.log("sucess");
   const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
@@ -130,12 +132,14 @@ if (exerciseListObj[valueCamelCase]) {
 }
 
 exerciseInput.addEventListener("input", () => {
+  addMovement.style.display = "inline-block";
   value = utils.getMovementInput();
   valueCamelCase = utils.toCamelCase(value.toLowerCase());
   // console.log(valueCamelCase);
   variations.innerHTML = "";
   if (exerciseListObj[valueCamelCase]) {
     console.log("sucess");
+    addMovement.style.display = "none";
     const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
       if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
