@@ -86,6 +86,7 @@ let value = utils.getMovementInput();
 let valueCamelCase = utils.toCamelCase(value.toLowerCase());
 // console.log(valueCamelCase);
 if (exerciseListObj[valueCamelCase]) {
+  // hide add movement button for existing movements
   addMovement.style.display = "none";
   variations.innerHTML = "";
   console.log("sucess");
@@ -132,6 +133,7 @@ if (exerciseListObj[valueCamelCase]) {
 }
 
 exerciseInput.addEventListener("input", () => {
+  // show add movement button to catch new unique movement names
   addMovement.style.display = "inline-block";
   value = utils.getMovementInput();
   valueCamelCase = utils.toCamelCase(value.toLowerCase());
@@ -139,6 +141,7 @@ exerciseInput.addEventListener("input", () => {
   variations.innerHTML = "";
   if (exerciseListObj[valueCamelCase]) {
     console.log("sucess");
+    // hide add movement button for existing movements
     addMovement.style.display = "none";
     const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
@@ -218,6 +221,22 @@ newMovementButton.addEventListener("click", () => {
   // workoutObj.movements = workoutArray;
   // // workoutObj[utils.getMovementInput()] = newMovement;
   localStorage.setItem("workoutHistoryObj", JSON.stringify(workoutHistoryObj));
+});
+
+addMovement.addEventListener("click", () => {
+  value = utils.getMovementInput();
+  valueCamelCase = utils.toCamelCase(value.toLowerCase());
+  exerciseListObj[valueCamelCase] = {
+    variation: {
+      none: true,
+      pause: true,
+      tempo: {
+        concentric: 1,
+        eccentric: 3,
+      },
+    },
+  };
+  console.log(exerciseListObj);
 });
 
 newVariationButton.addEventListener("click", () => {
