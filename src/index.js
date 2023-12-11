@@ -34,6 +34,7 @@ import * as utils from "./utils";
 // find way to track order of exercises
 // fix blank movement field
 // local storage for new unique movement
+// make sure you can add new tempo times in variations
 
 // console.log(exercises.sampleWorkout());
 
@@ -237,6 +238,7 @@ addMovement.addEventListener("click", () => {
     },
   };
   console.log(exerciseListObj);
+  localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
 });
 
 newVariationButton.addEventListener("click", () => {
