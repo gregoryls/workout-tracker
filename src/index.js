@@ -18,7 +18,6 @@ import * as utils from "./utils";
 // work on new variation logic
 // add movements to workout array, display array contents in some collapsible form
 // iterate through the workout array to build the final workout object
-// let user set date
 // merit to simply storing workout data as array of objects, first array item is date?
 // ^^^, build as obj from start, apply user date during final submit
 // set input starts at 1 and increments itself outside user control (can edit later)
