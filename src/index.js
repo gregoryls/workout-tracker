@@ -16,7 +16,6 @@ import * as utils from "./utils";
 // new variation js
 // change variation button to something like clickable text
 // work on new variation logic
-// comments
 // add movements to workout array, display array contents in some collapsible form
 // iterate through the workout array to build the final workout object
 // let user set date
