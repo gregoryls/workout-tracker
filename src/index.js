@@ -33,6 +33,9 @@ import * as utils from "./utils";
 // fix blank movement field
 // local storage for new unique movement
 // make sure you can add new tempo times in variations
+// mesocycle select other bring up a text input
+// add gpp to mesocycle
+// mesocycle make sure default selection stays constant for a given workout
 
 // console.log(exercises.sampleWorkout());
 
