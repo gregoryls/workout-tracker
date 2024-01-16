@@ -58,6 +58,21 @@ export function getMovementInput() {
   return input.value;
 }
 
+export function getMesocycleInput() {
+  const input = document.getElementById("mesocycleInput");
+  return input.value;
+}
+
+export function getMicrocycleInput() {
+  const input = document.getElementById("microcycleInput");
+  return input.value;
+}
+
+export function getWorkoutNameInput() {
+  const input = document.getElementById("workoutNameInput");
+  return input.value;
+}
+
 export function getWeightInput() {
   const input = document.getElementById("weight");
   return input.value;
