@@ -36,6 +36,7 @@ import * as utils from "./utils";
 // mesocycle select other bring up a text input
 // add gpp to mesocycle
 // mesocycle make sure default selection stays constant for a given workout
+// link new cycle inputs into obj
 
 // console.log(exercises.sampleWorkout());
 

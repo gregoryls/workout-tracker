@@ -198,8 +198,14 @@ export function generateSetObj(obj) {
 
 export function generateMovementObj() {
   const movement = getMovementInput();
+  const mesocycle = getMesocycleInput();
+  const microcycle = getMicrocycleInput();
+  const workoutName = getWorkoutNameInput();
 
   const obj = {
+    mesocycle,
+    microcycle,
+    workoutName,
     [movement]: {},
   };
 
