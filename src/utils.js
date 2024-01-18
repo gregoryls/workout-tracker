@@ -16,9 +16,9 @@ export function setDateInputToday() {
   dateInput.value = today;
 }
 
-function setAttributes(element, attribtues) {
-  Object.keys(attribtues).forEach((key) =>
-    element.setAttribute(key, attribtues[key]),
+function setAttributes(element, attributes) {
+  Object.keys(attributes).forEach((key) =>
+    element.setAttribute(key, attributes[key]),
   );
 }
 

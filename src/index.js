@@ -37,6 +37,7 @@ import * as utils from "./utils";
 // add gpp to mesocycle
 // mesocycle make sure default selection stays constant for a given workout
 // link new cycle inputs into obj
+// check on potential createInput() value assignment bugs
 
 // console.log(exercises.sampleWorkout());
 
@@ -50,6 +51,7 @@ const newMovementButton = document.getElementById("newMovementButton");
 // const userDate = document.getElementById('dateInput');
 const dateButton = document.getElementById("dateButton");
 const addMovement = document.getElementById("addMovement");
+const mesocycleInput = document.getElementById("mesocycleInput");
 
 // console.log(list);
 
@@ -81,6 +83,14 @@ dateButton.addEventListener("click", () => {
   const temp = utils.generateMovementObj();
   utils.generateSetObj(temp);
   console.log(temp);
+});
+
+mesocycleInput.addEventListener("change", () => {
+  const wrap = document.getElementById("mesocycleWrap");
+  if (mesocycleInput.value === "other") {
+    const label = document.createElement("label");
+    // element creation, think about setattributes()
+  }
 });
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
