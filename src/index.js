@@ -88,7 +88,16 @@ dateButton.addEventListener("click", () => {
 mesocycleInput.addEventListener("change", () => {
   const wrap = document.getElementById("mesocycleWrap");
   if (mesocycleInput.value === "other") {
-    const label = document.createElement("label");
+    // const label = document.createElement("label");
+    // label.setAttribute("for", "mesocycleInputOther");
+    const input = document.createElement("input");
+    utils.setAttributes(input, {
+      type: "text",
+      name: "mesocycleInputOther",
+      id: "mesocycleInputOther",
+      placeholder: "Custom",
+    });
+    wrap.append(input);
     // element creation, think about setattributes()
   }
 });
