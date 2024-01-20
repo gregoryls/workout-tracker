@@ -100,6 +100,11 @@ mesocycleInput.addEventListener("change", () => {
     wrap.append(input);
     // element creation, think about setattributes()
   }
+  if (mesocycleInput.value !== "other") {
+    // check if the custom mesocycle input exists, if so, remove it for other select options
+    const mesocycleInputOther = document.getElementById("mesocycleInputOther");
+    if (mesocycleInputOther) mesocycleInputOther.remove();
+  }
 });
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
