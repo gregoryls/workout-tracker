@@ -8,7 +8,6 @@ import * as utils from "./utils";
 // which is also filterable by a search field.
 // read more on destructuring
 // instead of directly adding new exercise, have some kind of dialogue
-// look into webpack library
 // toggle to switch between RPE or RiR
 // write function to add entry to exercise list
 // consider displaying movements as capital first letter vs all lower
@@ -34,7 +33,6 @@ import * as utils from "./utils";
 // local storage for new unique movement
 // make sure you can add new tempo times in variations
 // mesocycle select other bring up a text input
-// add gpp to mesocycle
 // mesocycle make sure default selection stays constant for a given workout
 // link new cycle inputs into obj
 // check on potential createInput() value assignment bugs
@@ -52,10 +50,6 @@ const newMovementButton = document.getElementById("newMovementButton");
 const dateButton = document.getElementById("dateButton");
 const addMovement = document.getElementById("addMovement");
 const mesocycleInput = document.getElementById("mesocycleInput");
-
-// console.log(list);
-
-// console.log(exerciseListObj);
 
 let newMovement;
 
@@ -75,11 +69,7 @@ utils.setDateInputToday();
 
 dateButton.addEventListener("click", () => {
   // put user date input into workout array
-  // console.log(utils.getDate());
-  // if (workoutObj.date === null) {
-  //   workoutObj.date = utils.getDate();
-  //   console.log(workoutObj);
-  // }
+
   const temp = utils.generateMovementObj();
   utils.generateSetObj(temp);
   console.log(temp);
@@ -88,8 +78,6 @@ dateButton.addEventListener("click", () => {
 mesocycleInput.addEventListener("change", () => {
   const wrap = document.getElementById("mesocycleWrap");
   if (mesocycleInput.value === "other") {
-    // const label = document.createElement("label");
-    // label.setAttribute("for", "mesocycleInputOther");
     const input = document.createElement("input");
     utils.setAttributes(input, {
       type: "text",
@@ -209,10 +197,6 @@ exerciseInput.addEventListener("input", () => {
         }
       }
     }
-
-    // for (let i = 0; i < Object.keys(list[value].variation).length; i += 1) {
-    //   console.log(Object.keys(list[value].variation)[i]);
-    // }
   }
 });
 
@@ -244,9 +228,6 @@ newMovementButton.addEventListener("click", () => {
     utils.incrementSetNumber();
   }
 
-  // workoutArray.push(newMovement);
-  // workoutObj.movements = workoutArray;
-  // // workoutObj[utils.getMovementInput()] = newMovement;
   localStorage.setItem("workoutHistoryObj", JSON.stringify(workoutHistoryObj));
 });
 
