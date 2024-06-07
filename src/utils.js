@@ -87,8 +87,8 @@ export function getRepsInput() {
   const input = document.getElementById("reps");
   return input.value;
 }
-export function getRpeInput() {
-  const input = document.getElementById("rpe");
+export function getRIRInput() {
+  const input = document.getElementById("RIR");
   return input.value;
 }
 export function getInputValue(inputID) {
@@ -170,7 +170,7 @@ export function generateSetObj(obj) {
   const weight = getWeightInput();
   const weightUnit = getWeightUnit();
   const reps = getRepsInput();
-  const rpe = getRpeInput();
+  const RIR = getRIRInput();
   const variationInput = getVariationInput();
 
   const movementObj = obj;
@@ -179,7 +179,7 @@ export function generateSetObj(obj) {
     weight,
     weightUnit,
     reps,
-    rpe,
+    RIR,
   };
 
   if (variationInput.length < 1) {
