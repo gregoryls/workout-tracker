@@ -60,6 +60,10 @@ export function getMovementInput() {
 
 export function getMesocycleInput() {
   const input = document.getElementById("mesocycleInput");
+  if (input.value === "other") {
+    const inputOther = document.getElementById("mesocycleInputOther");
+    return inputOther.value;
+  }
   return input.value;
 }
 
