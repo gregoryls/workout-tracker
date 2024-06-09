@@ -36,6 +36,8 @@ import * as utils from "./utils";
 // mesocycle make sure default selection stays constant for a given workout
 // link new cycle inputs into obj
 // check on potential createInput() value assignment bugs
+// mesocycle input Other text input needs to show up on page reload.
+// package meso other input into function
 
 // console.log(exercises.sampleWorkout());
 
@@ -288,3 +290,16 @@ clear.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
 });
+
+// autoload custom meso input
+const wrap = document.getElementById("mesocycleWrap");
+if (mesocycleInput.value === "other") {
+  const input = document.createElement("input");
+  utils.setAttributes(input, {
+    type: "text",
+    name: "mesocycleInputOther",
+    id: "mesocycleInputOther",
+    placeholder: "Custom",
+  });
+  wrap.append(input);
+}
