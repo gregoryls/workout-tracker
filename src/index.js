@@ -77,7 +77,7 @@ dateButton.addEventListener("click", () => {
   console.log(temp);
 });
 
-mesocycleInput.addEventListener("change", () => {
+function generateMesocycleInputOther() {
   const wrap = document.getElementById("mesocycleWrap");
   if (mesocycleInput.value === "other") {
     const input = document.createElement("input");
@@ -90,6 +90,12 @@ mesocycleInput.addEventListener("change", () => {
     wrap.append(input);
     // element creation, think about setattributes()
   }
+}
+
+mesocycleInput.addEventListener("change", () => {
+  generateMesocycleInputOther();
+
+  // remove custom text input when selecting a different option
   if (mesocycleInput.value !== "other") {
     // check if the custom mesocycle input exists, if so, remove it for other select options
     const mesocycleInputOther = document.getElementById("mesocycleInputOther");
@@ -292,14 +298,4 @@ clear.addEventListener("click", () => {
 });
 
 // autoload custom meso input
-const wrap = document.getElementById("mesocycleWrap");
-if (mesocycleInput.value === "other") {
-  const input = document.createElement("input");
-  utils.setAttributes(input, {
-    type: "text",
-    name: "mesocycleInputOther",
-    id: "mesocycleInputOther",
-    placeholder: "Custom",
-  });
-  wrap.append(input);
-}
+generateMesocycleInputOther();
