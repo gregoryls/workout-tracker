@@ -36,8 +36,6 @@ import * as utils from "./utils";
 // mesocycle make sure default selection stays constant for a given workout
 // link new cycle inputs into obj
 // check on potential createInput() value assignment bugs
-// mesocycle input Other text input needs to show up on page reload.
-// package meso other input into function
 
 // console.log(exercises.sampleWorkout());
 
@@ -132,15 +130,11 @@ if (exerciseListObj[valueCamelCase]) {
           if (event.target.checked) {
             const tempoWrap = document.createElement("div");
             tempoWrap.id = "tempoVariationWrap";
-            const eccentric = utils.createInput(
-              "number",
-              "eccentric",
-              "eccentric",
-            );
+            const eccentric = utils.createInput("number", "eccentric", "Wrap");
             const concentric = utils.createInput(
               "number",
               "concentric",
-              "concentric",
+              "Wrap",
             );
             tempoWrap.append(eccentric, concentric);
             variations.append(tempoWrap);
@@ -187,12 +181,12 @@ exerciseInput.addEventListener("input", () => {
               const eccentric = utils.createInput(
                 "number",
                 "eccentric",
-                "eccentric",
+                "Wrap",
               );
               const concentric = utils.createInput(
                 "number",
                 "concentric",
-                "concentric",
+                "Wrap",
               );
               tempoWrap.append(eccentric, concentric);
               variations.append(tempoWrap);
