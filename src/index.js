@@ -35,7 +35,7 @@ import * as utils from "./utils";
 // mesocycle select other bring up a text input
 // mesocycle make sure default selection stays constant for a given workout
 // link new cycle inputs into obj
-// check on potential createInput() value assignment bugs
+// package exercise event listener into function
 
 // console.log(exercises.sampleWorkout());
 
@@ -106,60 +106,12 @@ utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 let value = utils.getMovementInput();
 let valueCamelCase = utils.toCamelCase(value.toLowerCase());
 // console.log(valueCamelCase);
-if (exerciseListObj[valueCamelCase]) {
-  // hide add movement button for existing movements
-  addMovement.style.display = "none";
-  variations.innerHTML = "";
-  console.log("sucess");
-  const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
-  for (let i = 0; i < keys.length; i += 1) {
-    if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
-      const createCheckboxInput = utils.createInput(
-        "checkbox",
-        keys[i],
-        "VariationCheck",
-      );
-      variations.append(createCheckboxInput);
-
-      // pre-check the 'none variation after it's div is appended
-      if (keys[i] === "none") document.getElementById("none").checked = true;
-
-      // expand the tempo checkbox if selected for eccentric/concentric inputs
-      if (keys[i] === "tempo") {
-        createCheckboxInput.addEventListener("change", (event) => {
-          if (event.target.checked) {
-            const tempoWrap = document.createElement("div");
-            tempoWrap.id = "tempoVariationWrap";
-            const eccentric = utils.createInput("number", "eccentric", "Wrap");
-            const concentric = utils.createInput(
-              "number",
-              "concentric",
-              "Wrap",
-            );
-            tempoWrap.append(eccentric, concentric);
-            variations.append(tempoWrap);
-          }
-          if (!event.target.checked) {
-            const tempoWrap = document.getElementById("tempoVariationWrap");
-            tempoWrap.remove();
-          }
-        });
-      }
-    }
-  }
-}
-
-exerciseInput.addEventListener("input", () => {
-  // show add movement button to catch new unique movement names
-  addMovement.style.display = "inline-block";
-  value = utils.getMovementInput();
-  valueCamelCase = utils.toCamelCase(value.toLowerCase());
-  // console.log(valueCamelCase);
-  variations.innerHTML = "";
+function movementTextMatch() {
   if (exerciseListObj[valueCamelCase]) {
-    console.log("sucess");
     // hide add movement button for existing movements
     addMovement.style.display = "none";
+    variations.innerHTML = "";
+    console.log("sucess");
     const keys = Object.keys(exerciseListObj[valueCamelCase].variation);
     for (let i = 0; i < keys.length; i += 1) {
       if (exerciseListObj[valueCamelCase].variation[keys[i]]) {
@@ -173,6 +125,7 @@ exerciseInput.addEventListener("input", () => {
         // pre-check the 'none variation after it's div is appended
         if (keys[i] === "none") document.getElementById("none").checked = true;
 
+        // expand the tempo checkbox if selected for eccentric/concentric inputs
         if (keys[i] === "tempo") {
           createCheckboxInput.addEventListener("change", (event) => {
             if (event.target.checked) {
@@ -200,6 +153,17 @@ exerciseInput.addEventListener("input", () => {
       }
     }
   }
+}
+movementTextMatch();
+exerciseInput.addEventListener("input", () => {
+  // show add movement button to catch new unique movement names
+  addMovement.style.display = "inline-block";
+  value = utils.getMovementInput();
+  valueCamelCase = utils.toCamelCase(value.toLowerCase());
+
+  // clear variations so they don't get stuck when changing between known movements
+  variations.innerHTML = "";
+  movementTextMatch();
 });
 
 newMovementButton.addEventListener("click", () => {
