@@ -225,29 +225,7 @@ newVariationButton.addEventListener("click", () => {
   localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
 });
 
-submitExercise.addEventListener("click", () => {
-  // // don't add empty entry to exercise list object
-  // if (value === "") return;
-  // const keys = Object.keys(exerciseListObj);
-  // // console.log(keys);
-  // // checks current list of movements; adds unique movements to exercise list
-  // let isContained = false;
-  // for (let i = 0; i < keys.length; i += 1) {
-  //   const movement = exerciseListObj[valueCamelCase];
-  //   if (movement) {
-  //     isContained = true;
-  //   }
-  // }
-  // if (!isContained) {
-  //   exerciseListObj[valueCamelCase] = { variation: { none: true } };
-  //   console.log(exerciseListObj);
-  // }
-  // //
-  // utils.generateSetObj(newMovement);
-  // console.log(workoutArray);
-  // console.log(utils.displayObject(workoutArray[0]));
-  // utils.incrementSetNumber();
-});
+submitExercise.addEventListener("click", () => {});
 
 const clear = document.getElementById("clear");
 clear.addEventListener("click", () => {
