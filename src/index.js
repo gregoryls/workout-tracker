@@ -65,15 +65,8 @@ console.log(exerciseListObj);
 const movementObj = {};
 const workoutObj = {};
 
-utils.setDateInputToday();
-
-dateButton.addEventListener("click", () => {
-  // put user date input into workout array
-
-  const temp = utils.generateMovementObj();
-  utils.generateSetObj(temp);
-  console.log(temp);
-});
+let value = utils.getMovementInput();
+let valueCamelCase = utils.toCamelCase(value.toLowerCase());
 
 function generateMesocycleInputOther() {
   const wrap = document.getElementById("mesocycleWrap");
@@ -90,21 +83,6 @@ function generateMesocycleInputOther() {
   }
 }
 
-mesocycleInput.addEventListener("change", () => {
-  generateMesocycleInputOther();
-
-  // remove custom text input when selecting a different option
-  if (mesocycleInput.value !== "other") {
-    // check if the custom mesocycle input exists, if so, remove it for other select options
-    const mesocycleInputOther = document.getElementById("mesocycleInputOther");
-    if (mesocycleInputOther) mesocycleInputOther.remove();
-  }
-});
-
-utils.fillDatalist("exerciseInputOptions", exerciseListObj);
-
-let value = utils.getMovementInput();
-let valueCamelCase = utils.toCamelCase(value.toLowerCase());
 // console.log(valueCamelCase);
 function movementTextMatch() {
   if (exerciseListObj[valueCamelCase]) {
@@ -154,7 +132,18 @@ function movementTextMatch() {
     }
   }
 }
-movementTextMatch();
+
+mesocycleInput.addEventListener("change", () => {
+  generateMesocycleInputOther();
+
+  // remove custom text input when selecting a different option
+  if (mesocycleInput.value !== "other") {
+    // check if the custom mesocycle input exists, if so, remove it for other select options
+    const mesocycleInputOther = document.getElementById("mesocycleInputOther");
+    if (mesocycleInputOther) mesocycleInputOther.remove();
+  }
+});
+
 exerciseInput.addEventListener("input", () => {
   // show add movement button to catch new unique movement names
   addMovement.style.display = "inline-block";
@@ -225,6 +214,14 @@ newVariationButton.addEventListener("click", () => {
   localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
 });
 
+dateButton.addEventListener("click", () => {
+  // put user date input into workout array
+
+  const temp = utils.generateMovementObj();
+  utils.generateSetObj(temp);
+  console.log(temp);
+});
+
 submitExercise.addEventListener("click", () => {});
 
 const clear = document.getElementById("clear");
@@ -232,6 +229,12 @@ clear.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
 });
+
+utils.setDateInputToday();
+
+movementTextMatch();
+
+utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
 // autoload custom meso input
 generateMesocycleInputOther();
