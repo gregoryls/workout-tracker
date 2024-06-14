@@ -189,6 +189,7 @@ newMovementButton.addEventListener("click", () => {
 addMovement.addEventListener("click", () => {
   value = utils.getMovementInput();
   valueCamelCase = utils.toCamelCase(value.toLowerCase());
+  // TODO base this on a standard variation list from the json
   exerciseListObj[valueCamelCase] = {
     variation: {
       none: true,
@@ -216,10 +217,9 @@ newVariationButton.addEventListener("click", () => {
 
 dateButton.addEventListener("click", () => {
   // put user date input into workout array
-
-  const movementObj = utils.generateMovementObj();
-  utils.generateSetObj(movementObj);
-  console.log(movementObj);
+  // const movementObj = utils.generateMovementObj();
+  // utils.generateSetObj(movementObj);
+  // console.log(movementObj);
 });
 
 submitExercise.addEventListener("click", () => {});
