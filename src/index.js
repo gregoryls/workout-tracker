@@ -62,7 +62,7 @@ const workoutHistoryObj =
   JSON.parse(localStorage.getItem("workoutHistoryObj")) || {};
 console.log(workoutHistoryObj);
 console.log(exerciseListObj);
-const movementObj = {};
+// const movementObj = {};
 const workoutObj = {};
 
 let value = utils.getMovementInput();
@@ -217,9 +217,9 @@ newVariationButton.addEventListener("click", () => {
 dateButton.addEventListener("click", () => {
   // put user date input into workout array
 
-  const temp = utils.generateMovementObj();
-  utils.generateSetObj(temp);
-  console.log(temp);
+  const movementObj = utils.generateMovementObj();
+  utils.generateSetObj(movementObj);
+  console.log(movementObj);
 });
 
 submitExercise.addEventListener("click", () => {});
