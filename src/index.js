@@ -103,6 +103,13 @@ function movementTextMatch() {
         // pre-check the 'none variation after it's div is appended
         if (keys[i] === "none") document.getElementById("none").checked = true;
 
+        if (keys[i] !== "none") {
+          createCheckboxInput.addEventListener("change", (event) => {
+            if (event.target.checked)
+              document.getElementById("none").checked = false;
+          });
+        }
+
         // expand the tempo checkbox if selected for eccentric/concentric inputs
         if (keys[i] === "tempo") {
           createCheckboxInput.addEventListener("change", (event) => {
