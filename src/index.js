@@ -1,5 +1,5 @@
 import "./style.css";
-import * as exercises from "./exercises";
+import exercises from "./exercises.json";
 import * as utils from "./utils";
 
 // TODO
