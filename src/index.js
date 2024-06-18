@@ -57,6 +57,7 @@ const workoutArray = [];
 
 const exerciseListObj =
   JSON.parse(localStorage.getItem("exerciseListObj")) || exercises;
+
 // retrieve saved object or initialize a blank object
 const workoutHistoryObj =
   JSON.parse(localStorage.getItem("workoutHistoryObj")) || {};
