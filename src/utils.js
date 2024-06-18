@@ -121,14 +121,13 @@ export function getEndTime() {
 export function getVariationInput() {
   const variationInputs = document.getElementById("variationInputs");
   const variations = variationInputs.childNodes;
-  // rename x
   const variationArray = [];
 
   variations.forEach((variant) => {
+    // children[1] accounts for the label element at the [0] spot
     if (variant.children[1].checked) {
-      // console.log(variant.children[1].value);
+      console.log(variant.children[1]);
       variationArray.push(variant.children[1].value);
-      // console.log(x);
     }
   });
   return variationArray;
@@ -156,14 +155,14 @@ export function getSetNumber() {
   return setNumber;
 }
 
-const setNumber = document.getElementById("setNumber");
 export function incrementSetNumber() {
-  let number = Number(setNumber.textContent);
-  number += 1;
-  setNumber.textContent = number;
+  const setNumber = document.getElementById("setNumber");
+
+  setNumber.value += 1;
 }
 
 export function resetSetNumber() {
+  const setNumber = document.getElementById("setNumber");
   setNumber.value = 1;
 }
 
