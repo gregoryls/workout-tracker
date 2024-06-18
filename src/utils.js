@@ -164,7 +164,7 @@ export function incrementSetNumber() {
 }
 
 export function resetSetNumber() {
-  setNumber.textContent = 1;
+  setNumber.value = 1;
 }
 
 export function generateSetObj(obj) {
