@@ -152,7 +152,7 @@ export function setWorkoutTime(obj) {
 
 export function getSetNumber() {
   const setCounter = document.getElementById("setNumber");
-  const setNumber = Number(setCounter.textContent);
+  const setNumber = setCounter.value;
   return setNumber;
 }
 
@@ -176,6 +176,7 @@ export function generateSetObj(obj) {
   const reps = getRepsInput();
   const RIR = getRIRInput();
   const variationInput = getVariationInput();
+  console.log(set);
 
   const movementObj = obj;
   const setObj = {
