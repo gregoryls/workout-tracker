@@ -36,6 +36,7 @@ import * as utils from "./utils";
 // mesocycle make sure default selection stays constant for a given workout
 // link new cycle inputs into obj
 // package exercise event listener into function
+// check setNumber for string/num issues
 
 // console.log(exercises.sampleWorkout());
 
@@ -165,8 +166,10 @@ exerciseInput.addEventListener("input", () => {
 
 newMovementButton.addEventListener("click", () => {
   const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
+  const setNumber = document.getElementById("setNumber");
+  console.log(typeof setNumber.value);
   // run this if block for the first set only
-  if (document.getElementById("setNumber").value === 1) {
+  if (Number(setNumber.value) === 1) {
     // TODO dateblock only needs to run once, check for content first
 
     utils.setWorkoutDateStart(workoutHistoryObj);
@@ -175,7 +178,7 @@ newMovementButton.addEventListener("click", () => {
     // console.log(workoutHistoryObj);
 
     newMovement = utils.generateMovementObj();
-    // console.log(newMovement);
+    console.log(newMovement);
 
     utils.generateSetObj(newMovement);
     // console.log(newMovement);
@@ -185,7 +188,7 @@ newMovementButton.addEventListener("click", () => {
     utils.incrementSetNumber();
   } else {
     utils.generateSetObj(newMovement);
-    // console.log(newMovement);
+    console.log(newMovement);
     Object.assign(workoutHistoryObj[dateStartTime], newMovement);
     console.log(workoutHistoryObj);
     utils.incrementSetNumber();

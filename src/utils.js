@@ -151,7 +151,7 @@ export function setWorkoutTime(obj) {
 
 export function getSetNumber() {
   const setCounter = document.getElementById("setNumber");
-  const setNumber = setCounter.value;
+  const setNumber = Number(setCounter.value);
   return setNumber;
 }
 
