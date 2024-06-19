@@ -158,7 +158,7 @@ export function getSetNumber() {
 export function incrementSetNumber() {
   const setNumber = document.getElementById("setNumber");
 
-  setNumber.value += 1;
+  setNumber.value = Number(setNumber.value) + 1;
 }
 
 export function resetSetNumber() {
