@@ -126,7 +126,7 @@ export function getVariationInput() {
   variations.forEach((variant) => {
     // children[1] accounts for the label element at the [0] spot
     if (variant.children[1].checked) {
-      console.log(variant.children[1]);
+      // console.log(variant.children[1]);
       variationArray.push(variant.children[1].value);
     }
   });
@@ -167,7 +167,7 @@ export function resetSetNumber() {
 }
 
 export function generateSetObj(obj) {
-  // does obj need to be defined as it is here
+  // TODO does obj need to be defined as it is here
   const movement = getMovementInput();
   const set = getSetNumber();
   const weight = getWeightInput();
@@ -175,7 +175,7 @@ export function generateSetObj(obj) {
   const reps = getRepsInput();
   const RIR = getRIRInput();
   const variationInput = getVariationInput();
-  console.log(set);
+  console.log(obj);
 
   const movementObj = obj;
   const setObj = {
@@ -194,7 +194,7 @@ export function generateSetObj(obj) {
     if (variationInput.length < 1) console.log("none");
     setObj.variations[variationInput[i]] = true;
   }
-
+  console.log(movementObj);
   movementObj[movement][`set${set}`] = setObj;
   // return currently not needed
   // return movementObj;

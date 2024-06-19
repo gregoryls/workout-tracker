@@ -166,7 +166,7 @@ exerciseInput.addEventListener("input", () => {
 newMovementButton.addEventListener("click", () => {
   const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
   // run this if block for the first set only
-  if (Number(document.getElementById("setNumber").textContent) === 1) {
+  if (document.getElementById("setNumber").value === 1) {
     // TODO dateblock only needs to run once, check for content first
 
     utils.setWorkoutDateStart(workoutHistoryObj);
