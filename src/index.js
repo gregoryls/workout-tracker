@@ -238,6 +238,8 @@ clear.addEventListener("click", () => {
   location.reload();
 });
 
+// page load
+utils.resetSetNumber();
 utils.setDateInputToday();
 
 movementTextMatch();

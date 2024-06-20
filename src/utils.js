@@ -162,6 +162,7 @@ export function incrementSetNumber() {
 }
 
 export function resetSetNumber() {
+  // TODO not resetting properly
   const setNumber = document.getElementById("setNumber");
   setNumber.value = 1;
 }
