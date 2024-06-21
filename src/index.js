@@ -165,6 +165,9 @@ exerciseInput.addEventListener("input", () => {
 });
 
 newMovementButton.addEventListener("click", () => {
+  // don't proceed with blank movement field
+  if (utils.getMovementInput() === "") return;
+
   const dateStartTime = `${utils.getDate()}|${utils.getStartTime()}`;
   const setNumber = document.getElementById("setNumber");
   // run this if block for the first set only
