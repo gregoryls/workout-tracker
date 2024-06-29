@@ -233,7 +233,17 @@ dateButton.addEventListener("click", () => {
   // console.log(movementObj);
 });
 
-submitExercise.addEventListener("click", () => {});
+submitExercise.addEventListener("click", async () => {
+  try {
+    const response = await fetch("/run-script", {
+      method: "POST",
+    });
+    const result = await response.json();
+    alert(result.message);
+  } catch (error) {
+    alert(`Error: ${error.message}`);
+  }
+});
 
 const clear = document.getElementById("clear");
 clear.addEventListener("click", () => {
