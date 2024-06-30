@@ -8,14 +8,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
+const PORT = 5500;
 
 app.use(express.static(__dirname)); // Serve static files from current directory
 
 // Endpoint to handle script execution
 app.post("/run-script", (req, res) => {
   // Path to your Node.js script
-  const scriptPath = path.join(__dirname, "script.mjs");
+  const scriptPath = path.join(__dirname, "sync.mjs");
 
   execFile("node", [scriptPath], (error, stdout, stderr) => {
     if (error) {
