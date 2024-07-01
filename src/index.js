@@ -241,6 +241,7 @@ submitExercise.addEventListener("click", async () => {
     const result = await response.json();
     alert(result.message);
   } catch (error) {
+    console.error("Fetch error:", error);
     alert(`Error: ${error.message}`);
   }
 });

@@ -18,12 +18,15 @@ app.post("/run-script", (req, res) => {
   const scriptPath = path.join(__dirname, "sync.mjs");
 
   execFile("node", [scriptPath], (error, stdout, stderr) => {
+    // Log the script output
+    console.log("stdout:", stdout);
+    console.log("stderr:", stderr);
     if (error) {
       return res
         .status(500)
         .json({ message: `Error: ${stderr || error.message}` });
     }
-    res.json({ message: stdout || "Script ran successfully!" });
+    res.json({ message: stdout.trim() || "Script ran successfully!" });
   });
 });
 
