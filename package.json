@@ -9,7 +9,7 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "server": "node server.js"
+    "server": "node src/server.mjs"
   },
   "repository": {
     "type": "git",
