@@ -14,7 +14,7 @@ app.use(express.static(__dirname)); // Serve static files from current directory
 
 // Endpoint to handle script execution
 app.post("/run-script", (req, res) => {
-  // Path to your Node.js script
+  // Path to Node.js script
   const scriptPath = path.join(__dirname, "sync.mjs");
 
   execFile("node", [scriptPath], (error, stdout, stderr) => {
@@ -26,7 +26,11 @@ app.post("/run-script", (req, res) => {
         .status(500)
         .json({ message: `Error: ${stderr || error.message}` });
     }
-    res.json({ message: stdout.trim() || "Script ran successfully!" });
+    const output = stdout.trim();
+    if (!output) {
+      return res.status(500).json({ message: "No output from script" });
+    }
+    res.json({ message: output });
   });
 });
 
