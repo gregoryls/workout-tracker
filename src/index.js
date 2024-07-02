@@ -238,10 +238,16 @@ submitExercise.addEventListener("click", async () => {
     const response = await fetch("/run-script", {
       method: "POST",
     });
+
+    if (!response.ok) {
+      // Handle HTTP errors
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
     const result = await response.json();
     alert(result.message);
   } catch (error) {
-    console.error("Fetch error:", error);
+    console.error("Fetch error:", error); // Log fetch error
     alert(`Error: ${error.message}`);
   }
 });
