@@ -15,7 +15,7 @@ app.use(express.static(__dirname)); // Serve static files from current directory
 // Endpoint to handle script execution
 app.post("/run-script", (req, res) => {
   // Path to Node.js script
-  const scriptPath = path.join(__dirname, "sync.mjs");
+  const scriptPath = path.join(__dirname, "script.mjs");
 
   execFile("node", [scriptPath], (error, stdout, stderr) => {
     // Log the script output
