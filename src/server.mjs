@@ -8,9 +8,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 5500;
+const PORT = 3000;
 
-app.use(express.static(__dirname)); // Serve static files from current directory
+// Serve static files from current directory
+app.use(express.static(__dirname, "../dist"));
 
 // Endpoint to handle script execution
 app.post("/run-script", (req, res) => {

@@ -235,7 +235,7 @@ dateButton.addEventListener("click", () => {
 
 submitExercise.addEventListener("click", async () => {
   try {
-    const response = await fetch("/run-script", {
+    const response = await fetch("http://localhost:3000/run-script", {
       method: "POST",
     });
 
