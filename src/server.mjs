@@ -11,7 +11,10 @@ const app = express();
 const PORT = 3000;
 
 // Serve static files from current directory
-app.use(express.static(__dirname, "../dist"));
+const staticPath = path.resolve(__dirname, "../dist");
+console.log("Static path:", staticPath);
+
+app.use(express.static(staticPath));
 
 // Endpoint to handle script execution
 app.post("/run-script", (req, res) => {
