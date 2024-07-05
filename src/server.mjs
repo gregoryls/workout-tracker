@@ -16,6 +16,19 @@ console.log("Static path:", staticPath);
 
 app.use(express.static(staticPath));
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Allow all origins
+  res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS"); // Allow these methods
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization"); // Allow these headers
+
+  // Handle preflight requests
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204); // No Content
+  }
+
+  next();
+});
+
 // Endpoint to handle script execution
 app.post("/run-script", (req, res) => {
   // Path to Node.js script
