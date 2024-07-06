@@ -35,7 +35,6 @@ app.post("/run-script", (req, res) => {
   const scriptPath = path.join(__dirname, "script.mjs");
 
   execFile("node", [scriptPath], (error, stdout, stderr) => {
-    // Log the script output
     console.log("stdout:", stdout);
     console.log("stderr:", stderr);
     if (error) {
