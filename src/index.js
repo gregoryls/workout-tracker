@@ -230,7 +230,7 @@ dateButton.addEventListener("click", () => {
   // put user date input into workout array
   // const movementObj = utils.generateMovementObj();
   // utils.generateSetObj(movementObj);
-  // console.log(movementObj);
+  console.log("movementObj");
 });
 
 submitExercise.addEventListener("click", async () => {

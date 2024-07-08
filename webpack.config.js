@@ -14,6 +14,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
+  devServer: {
+    watchFiles: ["src/**/*.html"],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "XXXXX",
