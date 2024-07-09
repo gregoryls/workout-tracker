@@ -50,6 +50,19 @@ app.post("/run-script", (req, res) => {
   });
 });
 
+// API route to save data
+app.post("/save-data", (req, res) => {
+  const data = req.body;
+  const filePath = path.resolve(__dirname, "data.json");
+
+  fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
+    if (err) {
+      return res.status(500).json({ message: "Failed to save data" });
+    }
+    res.json({ message: "Data saved successfully" });
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
