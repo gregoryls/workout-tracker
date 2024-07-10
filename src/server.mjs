@@ -2,6 +2,7 @@ import express from "express";
 import { execFile } from "child_process";
 import path from "path";
 import { fileURLToPath } from "url";
+import fs from "fs";
 
 // Utility to get __dirname in ES Module
 const __filename = fileURLToPath(import.meta.url);
@@ -50,7 +51,7 @@ app.post("/run-script", (req, res) => {
   });
 });
 
-// API route to save data
+// route to save data
 app.post("/save-data", (req, res) => {
   const data = req.body;
   const filePath = path.resolve(__dirname, "data.json");
