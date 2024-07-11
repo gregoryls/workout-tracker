@@ -54,13 +54,14 @@ app.post("/run-script", (req, res) => {
 // route to save data
 app.post("/save-data", (req, res) => {
   const data = req.body;
-  const filePath = path.resolve(__dirname, "data.json");
+  const fileName = `${data.name}.json`;
+  const filePath = path.resolve(__dirname, fileName);
 
   fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
     if (err) {
       return res.status(500).json({ message: "Failed to save data" });
     }
-    res.json({ message: "Data saved successfully" });
+    res.json({ message: "Data saved successfully", fileName });
   });
 });
 
