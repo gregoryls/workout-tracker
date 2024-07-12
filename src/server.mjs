@@ -54,7 +54,9 @@ app.post("/run-script", (req, res) => {
 // route to save data
 app.post("/save-data", (req, res) => {
   const data = req.body;
-  const fileName = `${data.name}.json`;
+  const fileName = `${data.name
+    .replace(/[^a-z0-9_-]/gi, "_")
+    .toLowerCase()}.json`;
   const filePath = path.resolve(__dirname, fileName);
 
   fs.writeFile(filePath, JSON.stringify(data, null, 2), (err) => {
