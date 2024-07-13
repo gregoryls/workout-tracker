@@ -67,6 +67,11 @@ app.post("/save-data", (req, res) => {
   });
 });
 
+// Fallback for SPA routing
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(staticPath, "index.html"));
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
