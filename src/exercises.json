@@ -1,5 +1,9 @@
 {
   "squat": {
+    "muscleGroups": {
+      "quad": 1,
+      "glute": 0.5
+    },
     "variation": {
       "none": true,
       "pause": true,
