@@ -767,7 +767,7 @@ function displayWorkoutInProgress(workout) {}
   \****************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"squat":{"muscleGroups":{"quad":1,"glute":0.5},"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"benchPress":{"muscleGroups":{"pec":1,"tricep":0.5,"frontDelt":0.5},"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"inclineBenchPress":{"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"overheadPress":{"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"deadlift":{"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"pullup":{"variation":{"chinup":true,"neutral":true,"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}}}');
+module.exports = JSON.parse('{"squat":{"muscleGroups":{"quad":1,"glute":0.5,"hamstring":0.2,"adductor":0.175},"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"benchPress":{"muscleGroups":{"pec":1,"tricep":0.6,"antDelt":0.25},"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"inclineBenchPress":{"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"overheadPress":{"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"deadlift":{"variation":{"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}},"pullup":{"variation":{"chinup":true,"neutral":true,"none":true,"pause":true,"tempo":{"concentric":1,"eccentric":3}}}}');
 
 /***/ })
 

@@ -2,7 +2,9 @@
   "squat": {
     "muscleGroups": {
       "quad": 1,
-      "glute": 0.5
+      "glute": 0.5,
+      "hamstring": 0.2,
+      "adductor": 0.175
     },
     "variation": {
       "none": true,
@@ -16,8 +18,8 @@
   "benchPress": {
     "muscleGroups": {
       "pec": 1,
-      "tricep": 0.5,
-      "frontDelt": 0.5
+      "tricep": 0.6,
+      "antDelt": 0.25
     },
     "variation": {
       "none": true,
