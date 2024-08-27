@@ -31,6 +31,11 @@
     }
   },
   "inclineBenchPress": {
+    "muscleGroups": {
+      "pec": 1,
+      "tricep": 0.45,
+      "antDelt": 0.5
+    },
     "variation": {
       "none": true,
       "pause": true,
@@ -41,6 +46,12 @@
     }
   },
   "overheadPress": {
+    "muscleGroups": {
+      "antDelt": 1,
+      "tricep": 0.5,
+      "trap": 0.3,
+      "pec": 0.25
+    },
     "variation": {
       "none": true,
       "pause": true,
