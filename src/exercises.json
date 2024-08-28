@@ -75,7 +75,7 @@
     "muscleGroups": {
       "lat": 1,
       "bicep": 0.65,
-      "trap": 0.45,
+      "lowTrap": 0.45,
       "rhomboid": 0.45
     },
     "variation": {
@@ -90,8 +90,8 @@
   "chinup": {
     "muscleGroups": {
       "lat": 1,
-      "bicep": 0.65,
-      "trap": 0.45,
+      "bicep": 0.85,
+      "pec": 0.35,
       "rhomboid": 0.45
     },
     "variation": {
@@ -106,8 +106,8 @@
   "neutralPullup": {
     "muscleGroups": {
       "lat": 1,
-      "bicep": 0.65,
-      "trap": 0.45,
+      "bicep": 0.75,
+      "brachialis": 0.65,
       "rhomboid": 0.45
     },
     "variation": {
