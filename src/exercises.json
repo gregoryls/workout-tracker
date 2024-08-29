@@ -45,6 +45,21 @@
       }
     }
   },
+  "dip": {
+    "muscleGroups": {
+      "tricep": 1,
+      "pec": 0.7,
+      "antDelt": 0.3
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "overheadPress": {
     "muscleGroups": {
       "antDelt": 1,
@@ -62,6 +77,29 @@
     }
   },
   "deadlift": {
+    "muscleGroups": {
+      "erector": 1,
+      "glute": 0.6,
+      "hamstring": 0.6,
+      "trap": 0.6,
+      "quad": 0.3
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "row": {
+    "muscleGroups": {
+      "lat": 1,
+      "rhomboid": 0.65,
+      "trap": 0.65,
+      "bicep": 0.3
+    },
     "variation": {
       "none": true,
       "pause": true,
