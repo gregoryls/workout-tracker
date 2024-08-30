@@ -15,6 +15,21 @@
       }
     }
   },
+  "legPress": {
+    "muscleGroups": {
+      "quad": 1,
+      "glute": 0.3,
+      "hamstring": 0.2
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "benchPress": {
     "muscleGroups": {
       "pec": 1,
