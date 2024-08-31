@@ -91,6 +91,25 @@
       }
     }
   },
+  "tricepExtension": {
+    "muscleGroups": {
+      "tricep": 1,
+      "anconeus": 0.4,
+      "forearm": 0.15
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "rope": true,
+      "bar": true,
+      "vbar": true,
+      "singleArm": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "deadlift": {
     "muscleGroups": {
       "erector": 1,
