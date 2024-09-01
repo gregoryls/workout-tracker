@@ -127,6 +127,38 @@
       }
     }
   },
+  "romanianDeadlift": {
+    "muscleGroups": {
+      "hamstring": 1,
+      "glute": 0.7,
+      "erector": 0.6,
+      "adductor": 0.3
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "stiffLegDeadlift": {
+    "muscleGroups": {
+      "hamstring": 1,
+      "glute": 0.6,
+      "erector": 0.6,
+      "adductor": 0.25
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "row": {
     "muscleGroups": {
       "lat": 1,
