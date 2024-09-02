@@ -2,7 +2,7 @@
   "squat": {
     "muscleGroups": {
       "quad": 1,
-      "glute": 0.5,
+      "gluteMax": 0.5,
       "hamstring": 0.2,
       "adductor": 0.175
     },
@@ -18,7 +18,7 @@
   "legPress": {
     "muscleGroups": {
       "quad": 1,
-      "glute": 0.3,
+      "gluteMax": 0.3,
       "hamstring": 0.2
     },
     "variation": {
@@ -113,7 +113,7 @@
   "deadlift": {
     "muscleGroups": {
       "erector": 1,
-      "glute": 0.6,
+      "gluteMax": 0.6,
       "hamstring": 0.6,
       "trap": 0.6,
       "quad": 0.3
@@ -130,7 +130,7 @@
   "romanianDeadlift": {
     "muscleGroups": {
       "hamstring": 1,
-      "glute": 0.7,
+      "gluteMax": 0.7,
       "erector": 0.6,
       "adductor": 0.3
     },
@@ -146,9 +146,43 @@
   "stiffLegDeadlift": {
     "muscleGroups": {
       "hamstring": 1,
-      "glute": 0.6,
+      "gluteMax": 0.6,
       "erector": 0.6,
       "adductor": 0.25
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "singleLegDeadlift": {
+    "muscleGroups": {
+      "hamstring": 1,
+      "gluteMax": 0.7,
+      "erector": 0.5,
+      "gluteMed": 0.45,
+      "adductor": 0.4,
+      "quadratusLumborum": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "nordicCurl": {
+    "muscleGroups": {
+      "hamstring": 1,
+      "gluteMax": 0.45,
+      "erector": 0.35,
+      "calf": 0.25
     },
     "variation": {
       "none": true,
