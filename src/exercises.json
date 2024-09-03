@@ -15,6 +15,24 @@
       }
     }
   },
+  "sumoSquat": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "adductor": 0.85,
+      "quad": 0.6,
+      "hamstring": 0.45,
+      "erector": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+
   "legPress": {
     "muscleGroups": {
       "quad": 1,
@@ -117,6 +135,23 @@
       "hamstring": 0.6,
       "trap": 0.6,
       "quad": 0.3
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "sumoDeadlift": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "adductor": 0.75,
+      "hamstring": 0.7,
+      "quad": 0.6,
+      "erector": 0.5
     },
     "variation": {
       "none": true,
