@@ -1,10 +1,28 @@
 {
-  "squat": {
+  "highBarSquat": {
     "muscleGroups": {
       "quad": 1,
-      "gluteMax": 0.5,
-      "hamstring": 0.2,
-      "adductor": 0.175
+      "gluteMax": 0.75,
+      "hamstring": 0.45,
+      "erector": 0.55,
+      "adductor": 0.2
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "lowBarSquat": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.75,
+      "quad": 0.65,
+      "erector": 0.65,
+      "adductor": 0.2
     },
     "variation": {
       "none": true,
