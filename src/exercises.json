@@ -33,6 +33,22 @@
       }
     }
   },
+  "frontSquat": {
+    "muscleGroups": {
+      "quad": 1,
+      "gluteMax": 0.65,
+      "erector": 0.55,
+      "hamstring": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "sumoSquat": {
     "muscleGroups": {
       "gluteMax": 1,
