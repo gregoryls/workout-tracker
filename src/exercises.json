@@ -372,5 +372,29 @@
         "eccentric": 3
       }
     }
+  },
+  "deadHang": {
+    "muscleGroups": {
+      "forearm": 1
+    },
+    "variation": {
+      "none": true
+    }
+  },
+  "hangingLegLift": {
+    "muscleGroups": {
+      "ab": 1,
+      "hipFlexor": 0.75,
+      "forearm": 0.55,
+      "oblique": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
   }
 }
