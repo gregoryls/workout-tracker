@@ -49,6 +49,23 @@
       }
     }
   },
+  "zercherSquat": {
+    "muscleGroups": {
+      "quad": 1,
+      "erector": 0.75,
+      "gluteMax": 0.65,
+      "trap": 0.55,
+      "rhomboid": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "slantBoardSquat": {
     "muscleGroups": {
       "quad": 1,
@@ -212,11 +229,28 @@
   },
   "deadlift": {
     "muscleGroups": {
-      "erector": 1,
-      "gluteMax": 0.6,
-      "hamstring": 0.6,
-      "trap": 0.6,
-      "quad": 0.3
+      "gluteMax": 1,
+      "erector": 0.75,
+      "hamstring": 0.75,
+      "trap": 0.45,
+      "quad": 0.45
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "deficitDeadlift": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.85,
+      "erector": 0.75,
+      "quad": 0.65,
+      "trap": 0.45
     },
     "variation": {
       "none": true,
@@ -318,6 +352,43 @@
       "gluteMed": 0.45,
       "adductor": 0.4,
       "quadratusLumborum": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "snatchGripDeadlift": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.75,
+      "erector": 0.75,
+      "trap": 0.65,
+      "rhomboid": 0.65,
+      "quad": 0.65,
+      "lat": 0.45
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "zercherDeadlift": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.75,
+      "erector": 0.75,
+      "trap": 0.65,
+      "rhomboid": 0.65,
+      "quad": 0.55
     },
     "variation": {
       "none": true,
