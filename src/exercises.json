@@ -49,6 +49,24 @@
       }
     }
   },
+  "safteySquatBarSquat": {
+    "muscleGroups": {
+      "quad": 1,
+      "erector": 0.75,
+      "gluteMax": 0.65,
+      "trap": 0.65,
+      "hamstring": 0.45
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+
   "zercherSquat": {
     "muscleGroups": {
       "quad": 1,
@@ -230,6 +248,22 @@
       "pec": 1,
       "tricep": 0.45,
       "antDelt": 0.5
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "swissBarBenchPress": {
+    "muscleGroups": {
+      "pec": 1,
+      "tricep": 0.85,
+      "antDelt": 0.65,
+      "serratus": 0.35
     },
     "variation": {
       "none": true,
@@ -484,6 +518,22 @@
       "gluteMax": 0.45,
       "erector": 0.35,
       "calf": 0.25
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "goodMorning": {
+    "muscleGroups": {
+      "hamstring": 1,
+      "erector": 0.85,
+      "gluteMax": 0.75,
+      "adductor": 0.45
     },
     "variation": {
       "none": true,
