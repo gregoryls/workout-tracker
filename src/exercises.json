@@ -274,6 +274,22 @@
       }
     }
   },
+  "hexPress": {
+    "muscleGroups": {
+      "pec": 1,
+      "tricep": 0.85,
+      "antDelt": 0.55,
+      "serratus": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "dip": {
     "muscleGroups": {
       "tricep": 1,
@@ -308,7 +324,7 @@
   "overheadPress": {
     "muscleGroups": {
       "antDelt": 1,
-      "tricep": 0.5,
+      "tricep": 0.75,
       "trap": 0.3,
       "pec": 0.25
     },
