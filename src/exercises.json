@@ -337,6 +337,47 @@
       }
     }
   },
+  "cleanAndJerk": {
+    "muscleGroups": {
+      "quad": 1,
+      "gluteMax": 0.85,
+      "trap": 0.75,
+      "core": 0.75,
+      "erector": 0.65,
+      "hamstring": 0.65,
+      "antDelt": 0.65,
+      "calf": 0.55,
+      "tricep": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "snatch": {
+    "muscleGroups": {
+      "quad": 1,
+      "trap": 0.85,
+      "gluteMax": 0.85,
+      "erector": 0.75,
+      "core": 0.75,
+      "hamstring": 0.65,
+      "antDelt": 0.55,
+      "calf": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "tricepExtension": {
     "muscleGroups": {
       "tricep": 1,
