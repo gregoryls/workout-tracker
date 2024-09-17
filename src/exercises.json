@@ -54,7 +54,6 @@
       "quad": 1,
       "erector": 0.75,
       "gluteMax": 0.65,
-      "trap": 0.65,
       "hamstring": 0.45
     },
     "variation": {
@@ -624,7 +623,7 @@
     "muscleGroups": {
       "lat": 1,
       "rhomboid": 0.65,
-      "trap": 0.65,
+      "lowTrap": 0.65,
       "bicep": 0.3
     },
     "variation": {
@@ -640,7 +639,7 @@
     "muscleGroups": {
       "lat": 1,
       "rhomboid": 0.75,
-      "trap": 0.65,
+      "lowTrap": 0.65,
       "bicep": 0.55,
       "postDelt": 0.55
     },
