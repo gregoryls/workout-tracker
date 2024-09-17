@@ -636,6 +636,23 @@
       }
     }
   },
+  "cableRow": {
+    "muscleGroups": {
+      "lat": 1,
+      "rhomboid": 0.75,
+      "trap": 0.65,
+      "bicep": 0.55,
+      "postDelt": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "shrug": {
     "muscleGroups": {
       "trap": 1,
@@ -690,6 +707,23 @@
       "bicep": 0.75,
       "brachialis": 0.65,
       "rhomboid": 0.45
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "latPulldown": {
+    "muscleGroups": {
+      "lat": 1,
+      "bicep": 0.75,
+      "lowTrap": 0.65,
+      "rhomboid": 0.55,
+      "postDelt": 0.45
     },
     "variation": {
       "none": true,
