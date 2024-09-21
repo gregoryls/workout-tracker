@@ -486,7 +486,7 @@
       "rope": true,
       "bar": true,
       "vbar": true,
-      "singleArm": true,
+      "single": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
