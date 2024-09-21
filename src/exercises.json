@@ -259,6 +259,20 @@
       }
     }
   },
+  "quadExtension": {
+    "muscleGroups": {
+      "quad": 1
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "single": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "benchPress": {
     "muscleGroups": {
       "pec": 1,
@@ -677,6 +691,21 @@
     "variation": {
       "none": true,
       "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "hamstringCurl": {
+    "muscleGroups": {
+      "hamstring": 1,
+      "calf": 0.25
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "single": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
