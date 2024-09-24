@@ -760,6 +760,39 @@
       }
     }
   },
+  "hipAbductionMachine": {
+    "muscleGroups": {
+      "gluteMed": 1,
+      "gluteMin": 0.75,
+      "tensorFasciaeLatae": 0.65,
+      "gluteMax": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "single": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "hipAdductionMachine": {
+    "muscleGroups": {
+      "adductor": 1,
+      "gracilis": 0.65,
+      "pectineus": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "single": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "row": {
     "muscleGroups": {
       "lat": 1,
