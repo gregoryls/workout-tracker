@@ -745,6 +745,21 @@
       }
     }
   },
+  "reverseHyperMachine": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.85,
+      "erector": 0.75
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "hamstringCurl": {
     "muscleGroups": {
       "hamstring": 1,
