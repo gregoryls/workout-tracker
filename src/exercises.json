@@ -259,7 +259,7 @@
       }
     }
   },
-  "quadExtension": {
+  "quadExtensionMachine": {
     "muscleGroups": {
       "quad": 1
     },
@@ -522,7 +522,7 @@
       }
     }
   },
-  "tricepExtension": {
+  "cableTricepExtension": {
     "muscleGroups": {
       "tricep": 1,
       "anconeus": 0.4,
@@ -760,7 +760,7 @@
       }
     }
   },
-  "hamstringCurl": {
+  "hamstringCurlMachine": {
     "muscleGroups": {
       "hamstring": 1,
       "calf": 0.25
