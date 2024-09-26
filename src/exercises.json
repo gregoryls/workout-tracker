@@ -482,7 +482,6 @@
       "quad": 1,
       "gluteMax": 0.75,
       "trap": 0.75,
-      "core": 0.65,
       "erector": 0.65,
       "hamstring": 0.65,
       "calf": 0.55
@@ -501,7 +500,6 @@
       "quad": 1,
       "gluteMax": 0.85,
       "trap": 0.75,
-      "core": 0.75,
       "erector": 0.65,
       "hamstring": 0.65,
       "antDelt": 0.65,
@@ -523,7 +521,6 @@
       "trap": 0.85,
       "gluteMax": 0.85,
       "erector": 0.75,
-      "core": 0.75,
       "hamstring": 0.65,
       "antDelt": 0.55,
       "calf": 0.55
