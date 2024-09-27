@@ -972,5 +972,33 @@
         "eccentric": 3
       }
     }
+  },
+  "farmerWalk": {
+    "muscleGroups": {
+      "forearm": 1,
+      "trap": 0.85,
+      "core": 0.75,
+      "erector": 0.75,
+      "quad": 0.65,
+      "gluteMax": 0.55,
+      "hamstring": 0.45
+    },
+    "variation": {
+      "none": true
+    }
+  },
+  "suitcaseCarry": {
+    "muscleGroups": {
+      "oblique": 1,
+      "forearm": 0.95,
+      "trap": 0.75,
+      "erector": 0.65,
+      "quad": 0.55,
+      "gluteMax": 0.45,
+      "hamstring": 0.35
+    },
+    "variation": {
+      "none": true
+    }
   }
 }
