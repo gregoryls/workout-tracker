@@ -1000,5 +1000,20 @@
     "variation": {
       "none": true
     }
+  },
+  "sandbagToShoulder": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "quad": 0.95,
+      "hamstring": 0.75,
+      "erector": 0.75,
+      "core": 0.75,
+      "trap": 0.55,
+      "bicep": 0.45,
+      "upperBack": 0.45
+    },
+    "variation": {
+      "none": true
+    }
   }
 }
