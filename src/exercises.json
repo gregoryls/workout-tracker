@@ -1001,6 +1001,21 @@
       "none": true
     }
   },
+  "sandbagCarry": {
+    "muscleGroups": {
+      "core": 1,
+      "forearm": 0.95,
+      "quad": 0.75,
+      "gluteMax": 0.65,
+      "erector": 0.65,
+      "upperBack": 0.55,
+      "hamstring": 0.55,
+      "antDelt": 0.45
+    },
+    "variation": {
+      "none": true
+    }
+  },
   "sandbagToShoulder": {
     "muscleGroups": {
       "gluteMax": 1,
