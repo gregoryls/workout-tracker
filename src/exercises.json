@@ -477,6 +477,23 @@
       }
     }
   },
+  "logPress": {
+    "muscleGroups": {
+      "antDelt": 1,
+      "tricep": 0.85,
+      "trap": 0.75,
+      "pec": 0.55,
+      "forearm": 0.55
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "clean": {
     "muscleGroups": {
       "quad": 1,
