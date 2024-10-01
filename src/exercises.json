@@ -494,6 +494,28 @@
       }
     }
   },
+  "logCleanAndPress": {
+    "muscleGroups": {
+      "antDelt": 1,
+      "gluteMax": 1,
+      "quad": 0.85,
+      "tricep": 0.85,
+      "upperBack": 0.75,
+      "erector": 0.75,
+      "hamstring": 0.75,
+      "core": 0.75,
+      "pec": 0.55,
+      "forearm": 0.75
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "clean": {
     "muscleGroups": {
       "quad": 1,
