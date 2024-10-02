@@ -477,6 +477,25 @@
       }
     }
   },
+  "pushPress": {
+    "muscleGroups": {
+      "antDelt": 1,
+      "tricep": 0.75,
+      "core": 0.3,
+      "quad": 0.3,
+      "gluteMax": 0.3,
+      "trap": 0.3,
+      "pec": 0.25
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "logPress": {
     "muscleGroups": {
       "antDelt": 1,
@@ -786,6 +805,21 @@
       "erector": 0.85,
       "gluteMax": 0.75,
       "adductor": 0.45
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "backExtensionMachine": {
+    "muscleGroups": {
+      "erector": 1,
+      "gluteMax": 0.75,
+      "hamstring": 0.65
     },
     "variation": {
       "none": true,
