@@ -429,7 +429,7 @@
       }
     }
   },
-  "machineFly": {
+  "flyMachine": {
     "muscleGroups": {
       "pec": 1,
       "antDelt": 0.45,
@@ -445,7 +445,7 @@
       }
     }
   },
-  "machineChestPress": {
+  "chestPressMachine": {
     "muscleGroups": {
       "pec": 1,
       "tricep": 0.65,
@@ -462,6 +462,22 @@
     }
   },
   "overheadPress": {
+    "muscleGroups": {
+      "antDelt": 1,
+      "tricep": 0.75,
+      "trap": 0.3,
+      "pec": 0.25
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "shoulderPressMachine": {
     "muscleGroups": {
       "antDelt": 1,
       "tricep": 0.75,
