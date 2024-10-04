@@ -236,6 +236,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -252,6 +253,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -268,6 +270,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
