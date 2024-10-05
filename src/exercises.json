@@ -300,6 +300,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -316,6 +317,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -331,6 +333,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -379,6 +382,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -490,6 +494,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -525,6 +530,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -741,6 +747,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -775,6 +782,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -1051,6 +1059,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
