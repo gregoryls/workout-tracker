@@ -1147,5 +1147,28 @@
     "variation": {
       "none": true
     }
+  },
+  "sledPush": {
+    "muscleGroups": {
+      "quad": 1,
+      "gluteMax": 0.95,
+      "hamstring": 0.75,
+      "calf": 0.65
+    },
+    "variation": {
+      "none": true
+    }
+  },
+  "sledPull": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.95,
+      "quad": 0.75,
+      "calf": 0.65,
+      "forearm": 0.5
+    },
+    "variation": {
+      "none": true
+    }
   }
 }
