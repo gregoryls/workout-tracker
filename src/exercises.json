@@ -1104,6 +1104,15 @@
       "none": true
     }
   },
+  "farmerHold": {
+    "muscleGroups": {
+      "forearm": 1,
+      "trap": 0.85
+    },
+    "variation": {
+      "none": true
+    }
+  },
   "suitcaseCarry": {
     "muscleGroups": {
       "oblique": 1,
