@@ -1044,6 +1044,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "neutralGrip": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -1060,6 +1061,7 @@
       "none": true,
       "pause": true,
       "dumbbell": true,
+      "cable": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -1084,6 +1086,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "abSling": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
