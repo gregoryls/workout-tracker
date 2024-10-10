@@ -1171,6 +1171,17 @@
       "none": true
     }
   },
+  "boxStepUp": {
+    "muscleGroups": {
+      "quad": 1,
+      "gluteMax": 0.85,
+      "hamstring": 0.75,
+      "calf": 0.45
+    },
+    "variation": {
+      "none": true
+    }
+  },
   "sledPush": {
     "muscleGroups": {
       "quad": 1,
