@@ -1160,6 +1160,22 @@
       "none": true
     }
   },
+  "atlasStoneLoad": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.95,
+      "quad": 0.85,
+      "forearm": 0.85,
+      "erector": 0.85,
+      "core": 0.75,
+      "lat": 0.65,
+      "trap": 0.55,
+      "bicep": 0.55
+    },
+    "variation": {
+      "none": true
+    }
+  },
   "boxJump": {
     "muscleGroups": {
       "quad": 1,
