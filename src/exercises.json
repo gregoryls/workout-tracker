@@ -1220,5 +1220,18 @@
     "variation": {
       "none": true
     }
+  },
+  "yokeWalk": {
+    "muscleGroups": {
+      "core": 1,
+      "quad": 0.95,
+      "gluteMax": 0.85,
+      "erector": 0.85,
+      "hamstring": 0.75,
+      "calf": 0.65
+    },
+    "variation": {
+      "none": true
+    }
   }
 }
