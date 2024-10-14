@@ -858,6 +858,22 @@
       }
     }
   },
+  "hipThrust": {
+    "muscleGroups": {
+      "gluteMax": 1,
+      "hamstring": 0.75,
+      "erector": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "bodyweight": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "backExtensionMachine": {
     "muscleGroups": {
       "erector": 1,
