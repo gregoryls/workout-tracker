@@ -982,6 +982,10 @@
     },
     "variation": {
       "none": true,
+      "barbell": true,
+      "dumbbell": true,
+      "trapBar": true,
+      "kettlebell": true,
       "pause": true,
       "tempo": {
         "concentric": 1,
