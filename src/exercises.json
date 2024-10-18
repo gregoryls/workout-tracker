@@ -110,6 +110,9 @@
     "variation": {
       "none": true,
       "pause": true,
+      "dumbbell": true,
+      "barbell": true,
+      "kettlebell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
