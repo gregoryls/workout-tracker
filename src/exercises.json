@@ -432,7 +432,7 @@
       }
     }
   },
-  "cableFly": {
+  "fly": {
     "muscleGroups": {
       "pec": 1,
       "antDelt": 0.55,
@@ -442,28 +442,15 @@
     "variation": {
       "none": true,
       "pause": true,
+      "cable": true,
+      "dumbbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
       }
     }
   },
-  "dumbbellFly": {
-    "muscleGroups": {
-      "pec": 1,
-      "antDelt": 0.55,
-      "bicep": 0.35,
-      "serratus": 0.25
-    },
-    "variation": {
-      "none": true,
-      "pause": true,
-      "tempo": {
-        "concentric": 1,
-        "eccentric": 3
-      }
-    }
-  },
+
   "flyMachine": {
     "muscleGroups": {
       "pec": 1,
