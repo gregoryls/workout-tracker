@@ -10,6 +10,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -27,6 +28,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -43,6 +45,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -59,6 +62,7 @@
     "variation": {
       "none": true,
       "pause": true,
+
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -94,6 +98,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -130,6 +135,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -312,6 +318,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -329,6 +336,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -345,6 +353,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -394,6 +403,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -493,6 +503,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -529,6 +540,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -587,6 +599,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -607,6 +620,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -626,6 +640,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -662,6 +677,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -679,6 +695,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -730,6 +747,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -746,6 +764,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -763,6 +782,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -781,6 +801,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "tempo": {
         "concentric": 1,
@@ -801,6 +822,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -819,6 +841,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -851,6 +874,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -866,6 +890,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "bodyweight": true,
       "tempo": {
         "concentric": 1,
@@ -962,6 +987,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "cableNarrow": true,
       "cableWide": true,
       "trx": true,
@@ -1067,6 +1093,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "barbell": true,
       "dumbbell": true,
       "cable": true,
       "tempo": {
