@@ -677,6 +677,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "tempo": {
         "concentric": 1,
@@ -695,6 +696,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "tempo": {
         "concentric": 1,
@@ -747,6 +749,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "tempo": {
         "concentric": 1,
@@ -764,6 +767,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "dumbbell": true,
       "tempo": {
@@ -782,6 +786,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "tempo": {
         "concentric": 1,
@@ -801,6 +806,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "dumbbell": true,
       "tempo": {
@@ -822,6 +828,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "tempo": {
         "concentric": 1,
@@ -841,6 +848,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "axle": true,
       "barbell": true,
       "tempo": {
         "concentric": 1,
