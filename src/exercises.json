@@ -1005,7 +1005,21 @@
       }
     }
   },
-
+  "facePull": {
+    "muscleGroups": {
+      "postDelt": 1,
+      "rhomboid": 0.85,
+      "lowTrap": 0.75
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "shrug": {
     "muscleGroups": {
       "trap": 1,
