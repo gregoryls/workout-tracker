@@ -505,6 +505,7 @@
       "pause": true,
       "barbell": true,
       "dumbbell": true,
+      "seated": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -1117,6 +1118,7 @@
       "pause": true,
       "barbell": true,
       "dumbbell": true,
+      "incline": true,
       "cable": true,
       "tempo": {
         "concentric": 1,
