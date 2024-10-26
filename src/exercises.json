@@ -436,6 +436,22 @@
     "variation": {
       "none": true,
       "pause": true,
+      "incline": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "declinePushup": {
+    "muscleGroups": {
+      "pec": 1,
+      "antDelt": 0.85,
+      "tricep": 0.65
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
