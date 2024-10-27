@@ -1190,6 +1190,16 @@
       "none": true
     }
   },
+  "behindTheBackHold": {
+    "muscleGroups": {
+      "forearm": 1,
+      "trap": 0.75
+    },
+    "variation": {
+      "none": true,
+      "barbell": true
+    }
+  },
   "suitcaseCarry": {
     "muscleGroups": {
       "oblique": 1,
