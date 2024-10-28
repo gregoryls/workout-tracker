@@ -1142,6 +1142,23 @@
       }
     }
   },
+  "spiderCurl": {
+    "muscleGroups": {
+      "bicep": 1,
+      "brachialis": 0.5
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "barbell": true,
+      "dumbbell": true,
+      "cable": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "deadHang": {
     "muscleGroups": {
       "forearm": 1
