@@ -1322,6 +1322,17 @@
       "none": true
     }
   },
+  "turkishGetUp": {
+    "muscleGroups": {
+      "core": 1,
+      "rotCuff": 0.85
+    },
+    "variation": {
+      "none": true,
+      "dumbbell": true,
+      "kettlebell": true
+    }
+  },
   "yokeWalk": {
     "muscleGroups": {
       "core": 1,
