@@ -1204,7 +1204,7 @@
       "none": true
     }
   },
-  "hangingLegLift": {
+  "hangingLegRaise": {
     "muscleGroups": {
       "ab": 1,
       "hipFlexor": 0.75,
