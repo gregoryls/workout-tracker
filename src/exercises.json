@@ -1221,6 +1221,22 @@
       }
     }
   },
+  "abWheel": {
+    "muscleGroups": {
+      "ab": 1,
+      "oblique": 0.75,
+      "hipFlexor": 0.45
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "abSling": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "farmerWalk": {
     "muscleGroups": {
       "forearm": 1,
