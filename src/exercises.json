@@ -179,6 +179,24 @@
       }
     }
   },
+  "sissySquat": {
+    "muscleGroups": {
+      "quad": 1,
+      "hipFlexor": 0.45,
+      "calf": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "dumbbell": true,
+      "kettlebell": true,
+      "barbell": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "bulgarianSplitSquat": {
     "muscleGroups": {
       "quad": 1,
