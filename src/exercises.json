@@ -1262,7 +1262,10 @@
       "hamstring": 0.45
     },
     "variation": {
-      "none": true
+      "none": true,
+      "frame": true,
+      "dumbbell": true,
+      "trapBar": true
     }
   },
   "farmerHold": {
