@@ -1274,7 +1274,10 @@
       "trap": 0.85
     },
     "variation": {
-      "none": true
+      "none": true,
+      "frame": true,
+      "dumbbell": true,
+      "trapBar": true
     }
   },
   "behindTheBackHold": {
