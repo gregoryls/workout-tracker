@@ -1110,6 +1110,24 @@
       }
     }
   },
+  "muscleUp": {
+    "muscleGroups": {
+      "lat": 1,
+      "bicep": 0.65,
+      "tricep": 0.5,
+      "lowTrap": 0.45,
+      "rhomboid": 0.45,
+      "antDelt": 0.35
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "chinup": {
     "muscleGroups": {
       "lat": 1,
