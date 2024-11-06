@@ -452,7 +452,22 @@
     "muscleGroups": {
       "tricep": 1,
       "pec": 0.7,
-      "antDelt": 0.3
+      "antDelt": 0.5
+    },
+    "variation": {
+      "none": true,
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
+  "benchDip": {
+    "muscleGroups": {
+      "tricep": 1,
+      "antDelt": 0.5,
+      "pec": 0.25
     },
     "variation": {
       "none": true,
