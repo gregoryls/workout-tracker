@@ -1067,6 +1067,7 @@
       "barbell": true,
       "cableNarrow": true,
       "cableWide": true,
+      "tBar": true,
       "trx": true,
       "tempo": {
         "concentric": 1,
