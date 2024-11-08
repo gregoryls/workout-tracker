@@ -11,6 +11,7 @@
       "none": true,
       "pause": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -29,6 +30,7 @@
       "none": true,
       "pause": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -46,6 +48,7 @@
       "none": true,
       "pause": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -62,7 +65,7 @@
     "variation": {
       "none": true,
       "pause": true,
-
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -99,6 +102,7 @@
       "none": true,
       "pause": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -136,6 +140,7 @@
       "none": true,
       "pause": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -748,6 +753,7 @@
       "pause": true,
       "axle": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -767,6 +773,7 @@
       "pause": true,
       "axle": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -784,6 +791,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -801,6 +809,7 @@
     "variation": {
       "none": true,
       "pause": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -820,6 +829,7 @@
       "pause": true,
       "axle": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -857,6 +867,7 @@
       "pause": true,
       "axle": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -899,6 +910,7 @@
       "pause": true,
       "axle": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -919,6 +931,7 @@
       "pause": true,
       "axle": true,
       "barbell": true,
+      "band": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
