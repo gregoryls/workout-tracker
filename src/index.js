@@ -62,8 +62,9 @@ const workoutArray = [];
 const exerciseListObj = exercises;
 
 // retrieve saved object or initialize a blank object
-const workoutHistoryObj =
-  JSON.parse(localStorage.getItem("workoutHistoryObj")) || {};
+// const workoutHistoryObj =
+//   JSON.parse(localStorage.getItem("workoutHistoryObj")) || {};
+const workoutHistoryObj = {};
 console.log(workoutHistoryObj);
 console.log(exerciseListObj);
 // const movementObj = {};
@@ -196,7 +197,7 @@ newMovementButton.addEventListener("click", () => {
     utils.incrementSetNumber();
   }
 
-  localStorage.setItem("workoutHistoryObj", JSON.stringify(workoutHistoryObj));
+  // localStorage.setItem("workoutHistoryObj", JSON.stringify(workoutHistoryObj));
 });
 
 addMovement.addEventListener("click", () => {
@@ -214,7 +215,7 @@ addMovement.addEventListener("click", () => {
     },
   };
   console.log(exerciseListObj);
-  localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
+  // localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
 });
 
 newVariationButton.addEventListener("click", () => {
@@ -225,7 +226,7 @@ newVariationButton.addEventListener("click", () => {
   if (newVariationValue === "") return;
   exerciseListObj[valueCamelCase].variation[newVariationValue] = true;
   console.log(exerciseListObj[valueCamelCase]);
-  localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
+  // localStorage.setItem("exerciseListObj", JSON.stringify(exerciseListObj));
 });
 
 dateButton.addEventListener("click", () => {
