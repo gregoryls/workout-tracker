@@ -237,23 +237,6 @@ dateButton.addEventListener("click", () => {
 });
 
 submitExercise.addEventListener("click", async () => {
-  // try {
-  //   const response = await fetch("http://localhost:3000/run-script", {
-  //     method: "POST",
-  //   });
-
-  //   if (!response.ok) {
-  //     // Handle HTTP errors
-  //     throw new Error(`HTTP error! status: ${response.status}`);
-  //   }
-
-  //   const result = await response.json();
-  //   alert(result.message);
-  // } catch (error) {
-  //   console.error("Fetch error:", error); // Log fetch error
-  //   alert(`Error: ${error.message}`);
-  // }
-
   const testData = {
     exercise: "squat",
     reps: 30,
