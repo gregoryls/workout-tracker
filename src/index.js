@@ -55,6 +55,7 @@ const mesocycleInput = document.getElementById("mesocycleInput");
 let newMovement;
 
 const workoutArray = [];
+console.log(utils.getDate());
 
 // const exerciseListObj =
 //   JSON.parse(localStorage.getItem("exerciseListObj")) || exercises;
@@ -233,7 +234,8 @@ dateButton.addEventListener("click", () => {
   // put user date input into workout array
   // const movementObj = utils.generateMovementObj();
   // utils.generateSetObj(movementObj);
-  console.log("movementObj");
+  console.log(utils.getDate());
+  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
 });
 
 submitExercise.addEventListener("click", async () => {

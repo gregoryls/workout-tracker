@@ -108,6 +108,9 @@ export function getDate() {
   const datetime = document.getElementById("dateInput");
   return datetime.value;
 }
+export function getTimeZone() {
+  return Intl.DateTimeFormat().resolvedOptions().timeZone;
+}
 export function getStartTime() {
   const startTime = document.getElementById("startTime");
   return startTime.value;
