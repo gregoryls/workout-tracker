@@ -223,6 +223,7 @@ export function generateMovementObj() {
 export function generateWorkoutObj(movements) {
   const obj = {};
   obj.date = getDate();
+  obj.timeZone = getTimeZone();
 
   for (let i = 0; i < movements.length; i += 1) {
     const movement = movements[i];
