@@ -51,6 +51,7 @@ const newMovementButton = document.getElementById("newMovementButton");
 const dateButton = document.getElementById("dateButton");
 const addMovement = document.getElementById("addMovement");
 const mesocycleInput = document.getElementById("mesocycleInput");
+const displayTestButton = document.getElementById("displayTest");
 
 let newMovement;
 
@@ -264,6 +265,10 @@ submitExercise.addEventListener("click", async () => {
     console.error("Fetch error:", error);
     alert(`Error: ${error.message}`);
   }
+});
+
+displayTestButton.addEventListener("click", () => {
+  console.log("test");
 });
 
 const clear = document.getElementById("clear");
