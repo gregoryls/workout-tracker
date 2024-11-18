@@ -268,7 +268,7 @@ submitExercise.addEventListener("click", async () => {
 });
 
 displayTestButton.addEventListener("click", () => {
-  console.log("test");
+  utils.displayObject();
 });
 
 const clear = document.getElementById("clear");
