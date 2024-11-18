@@ -1,6 +1,7 @@
 import "./style.css";
 import exercises from "./exercises.json";
 import * as utils from "./utils";
+import mesocycleAdditions from "./mesocycleAdditions.json";
 
 // TODO
 // big list of exercise full names, e.g. flat barbell bench, incline dumbell bench etc.
@@ -240,31 +241,33 @@ dateButton.addEventListener("click", () => {
 });
 
 submitExercise.addEventListener("click", async () => {
-  const testData = {
-    exercise: "squat",
-    reps: 30,
-    variant: "worldRecord",
-  };
+  const newMesocycleEntry = utils.getMesocycleInput();
+  console.log(newMesocycleEntry);
+  // const testData = {
+  //   exercise: "squat",
+  //   reps: 30,
+  //   variant: "worldRecord",
+  // };
 
-  try {
-    const response = await fetch("/save-data", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(testData),
-    });
+  // try {
+  //   const response = await fetch("/save-data", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(testData),
+  //   });
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+  //   if (!response.ok) {
+  //     throw new Error(`HTTP error! status: ${response.status}`);
+  //   }
 
-    const result = await response.json();
-    alert(`Message: ${result.message}, File Name: ${result.fileName}`);
-  } catch (error) {
-    console.error("Fetch error:", error);
-    alert(`Error: ${error.message}`);
-  }
+  //   const result = await response.json();
+  //   alert(`Message: ${result.message}, File Name: ${result.fileName}`);
+  // } catch (error) {
+  //   console.error("Fetch error:", error);
+  //   alert(`Error: ${error.message}`);
+  // }
 });
 
 displayTestButton.addEventListener("click", () => {
@@ -285,5 +288,5 @@ movementTextMatch();
 
 utils.fillDatalist("exerciseInputOptions", exerciseListObj);
 
-// autoload custom meso input
+// load custom meso input
 generateMesocycleInputOther();
