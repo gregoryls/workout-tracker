@@ -21,3 +21,7 @@ export async function updateJson(filePath, newData) {
     throw error;
   }
 }
+
+export function helloWorld() {
+  console.log("Hello world!");
+}
