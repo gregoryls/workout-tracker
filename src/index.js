@@ -282,7 +282,7 @@ scriptTestButton.addEventListener("click", () => {
 const clear = document.getElementById("clear");
 clear.addEventListener("click", () => {
   localStorage.clear();
-  location.reload();
+  window.location.reload();
 });
 
 // page load
