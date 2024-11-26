@@ -53,7 +53,7 @@ const dateButton = document.getElementById("dateButton");
 const addMovement = document.getElementById("addMovement");
 const mesocycleInput = document.getElementById("mesocycleInput");
 const displayTestButton = document.getElementById("displayTest");
-const scirptTestButton = document.getElementById("scriptTest");
+const scriptTestButton = document.getElementById("scriptTest");
 
 let newMovement;
 
@@ -275,7 +275,7 @@ displayTestButton.addEventListener("click", () => {
   utils.displayObject();
 });
 
-scriptTest.addEventListener("click", () => {
+scriptTestButton.addEventListener("click", () => {
   console.log("test");
 });
 
