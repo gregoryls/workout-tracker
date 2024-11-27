@@ -275,8 +275,14 @@ displayTestButton.addEventListener("click", () => {
   utils.displayObject();
 });
 
-scriptTestButton.addEventListener("click", () => {
-  console.log("test");
+scriptTestButton.addEventListener("click", async () => {
+  try {
+    const response = await fetch("/run-script", { method: "POST" });
+    const result = await response.json();
+    console.log(result.message);
+  } catch (error) {
+    console.error("Error executing script:", error);
+  }
 });
 
 const clear = document.getElementById("clear");
