@@ -16,6 +16,10 @@ module.exports = {
   },
   devServer: {
     watchFiles: ["src/**/*.html"],
+    // change to api nomenclature
+    proxy: {
+      "/run-script": "http://localhost:3000",
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
