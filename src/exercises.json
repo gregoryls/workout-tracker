@@ -1069,6 +1069,7 @@
     },
     "variation": {
       "pause": true,
+      "assist": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -1086,6 +1087,7 @@
     },
     "variation": {
       "pause": true,
+      "assist": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -1101,6 +1103,7 @@
     },
     "variation": {
       "pause": true,
+      "assist": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
@@ -1116,6 +1119,7 @@
     },
     "variation": {
       "pause": true,
+      "assist": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
