@@ -1017,6 +1017,7 @@
     "variation": {
       "pause": true,
       "barbell": true,
+      "supinated": true,
       "cableNarrow": true,
       "cableWide": true,
       "tBar": true,
