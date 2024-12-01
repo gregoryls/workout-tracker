@@ -277,7 +277,7 @@ displayTestButton.addEventListener("click", () => {
 
 scriptTestButton.addEventListener("click", async () => {
   try {
-    const response = await fetch("/run-script", { method: "POST" });
+    const response = await fetch("/api/run-script", { method: "POST" });
     const result = await response.json();
     console.log(result.message);
   } catch (error) {

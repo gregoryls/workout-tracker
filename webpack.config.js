@@ -18,7 +18,7 @@ module.exports = {
     watchFiles: ["src/**/*.html"],
     // change to api nomenclature
     proxy: {
-      "/run-script": "http://localhost:3000",
+      "/api/run-script": "http://localhost:3000",
     },
   },
   plugins: [

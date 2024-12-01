@@ -8,7 +8,7 @@ const PORT = 3000;
 app.use(express.json());
 
 // barebones testing
-app.post("/run-script", (req, res) => {
+app.post("/api/run-script", (req, res) => {
   script.helloWorld(); // Call the script function
   res.json({ message: "Script executed successfully!" });
 });
