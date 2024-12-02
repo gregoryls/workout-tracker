@@ -249,26 +249,6 @@ submitExercise.addEventListener("click", async () => {
   //   reps: 30,
   //   variant: "worldRecord",
   // };
-
-  // try {
-  //   const response = await fetch("/save-data", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(testData),
-  //   });
-
-  //   if (!response.ok) {
-  //     throw new Error(`HTTP error! status: ${response.status}`);
-  //   }
-
-  //   const result = await response.json();
-  //   alert(`Message: ${result.message}, File Name: ${result.fileName}`);
-  // } catch (error) {
-  //   console.error("Fetch error:", error);
-  //   alert(`Error: ${error.message}`);
-  // }
 });
 
 displayTestButton.addEventListener("click", () => {
