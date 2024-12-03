@@ -1042,6 +1042,20 @@
       }
     }
   },
+  "yRaise": {
+    "muscleGroups": {
+      "lowTrap": 1,
+      "postDelt": 85,
+      "rhomboid": 0.5
+    },
+    "variation": {
+      "pause": true,
+      "tempo": {
+        "concentric": 1,
+        "eccentric": 3
+      }
+    }
+  },
   "shrug": {
     "muscleGroups": {
       "trap": 1,
