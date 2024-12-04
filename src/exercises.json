@@ -341,6 +341,7 @@
       "pause": true,
       "barbell": true,
       "dumbbell": true,
+      "reverseGrip": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
