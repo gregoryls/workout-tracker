@@ -1198,7 +1198,8 @@
       "forearm": 1
     },
     "variation": {
-      "none": true
+      "none": true,
+      "single": true
     }
   },
   "hangingLegRaise": {
