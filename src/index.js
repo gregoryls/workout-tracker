@@ -7,7 +7,6 @@ import mesocycleAdditions from "./mesocycleAdditions.json";
 // big list of exercise full names, e.g. flat barbell bench, incline dumbell bench etc.
 // maybe select options to narrow down a populated list of every exercise
 // which is also filterable by a search field.
-// read more on destructuring
 // instead of directly adding new exercise, have some kind of dialogue
 // toggle to switch between RPE or RiR
 // write function to add entry to exercise list
@@ -33,7 +32,6 @@ import mesocycleAdditions from "./mesocycleAdditions.json";
 // fix blank movement field
 // local storage for new unique movement
 // make sure you can add new tempo times in variations
-// mesocycle select other bring up a text input
 // mesocycle make sure default selection stays constant for a given workout
 // link new cycle inputs into obj
 // package exercise event listener into function

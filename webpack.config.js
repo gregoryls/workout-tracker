@@ -16,7 +16,6 @@ module.exports = {
   },
   devServer: {
     watchFiles: ["src/**/*.html"],
-    // change to api nomenclature
     proxy: {
       "/api/run-script": "http://localhost:3000",
     },
