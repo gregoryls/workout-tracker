@@ -1397,6 +1397,16 @@
       "kettlebell": true
     }
   },
+  "wristCurl": {
+    "muscleGroups": {
+      "forearm": 1
+    },
+    "variation": {
+      "barbell": true,
+      "dumbbell": true,
+      "kettlebell": true
+    }
+  },
   "yokeWalk": {
     "muscleGroups": {
       "core": 1,
