@@ -1171,6 +1171,7 @@
       "dumbbell": true,
       "incline": true,
       "cable": true,
+      "spider": true,
       "tempo": {
         "concentric": 1,
         "eccentric": 3
