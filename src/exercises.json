@@ -1422,5 +1422,16 @@
     "variation": {
       "none": true
     }
+  },
+  "battleRope": {
+    "muscleGroups": {
+      "antDelt": 1,
+      "forearm": 0.95,
+      "upperBack": 0.75,
+      "core": 0.7
+    },
+    "variation": {
+      "none": true
+    }
   }
 }
